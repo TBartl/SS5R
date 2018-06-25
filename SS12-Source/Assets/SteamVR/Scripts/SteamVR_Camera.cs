@@ -146,7 +146,7 @@ public class SteamVR_Camera : MonoBehaviour
 
 				var go = gameObject;
 				DestroyImmediate(this);
-				go.AddComponent<SteamVR_Camera>().ForceLast();
+				go.AddComponent<SteamVR_Camera>();
 			}
 		}
 	}
