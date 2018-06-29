@@ -4,27 +4,29 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Grabbable : MonoBehaviour {
-	
-	Rigidbody rb;
-	Hand grabber;
 
-	void Awake() {
-		rb = this.GetComponent<Rigidbody>();
-	}
+    Rigidbody rb;
+    Hand grabber;
 
-	public bool IsGrabbable() {
-		return (grabber == false);
-	}
+    void Awake() {
+        rb = this.GetComponent<Rigidbody>();
+    }
 
-	public void Grab(Hand newGrabber) {
-		grabber = newGrabber;
-		rb.isKinematic = true;
-		this.transform.parent = grabber.transform;
-	}
+    public bool IsGrabbable() {
+        return (grabber == false);
+    }
 
-	public void Release() {
-		grabber = null;
-		rb.isKinematic = false;
-		this.transform.parent = null;
-	}
+    public void Grab(Hand newGrabber) {
+        grabber = newGrabber;
+        rb.isKinematic = true;
+        this.transform.parent = grabber.transform;
+    }
+
+    public void Release(Vector3 releaseVelocity, Vector3 angularVelocity) {
+        grabber = null;
+        rb.isKinematic = false;
+        rb.velocity = releaseVelocity;
+        rb.angularVelocity = angularVelocity;
+        this.transform.parent = null;
+    }
 }
