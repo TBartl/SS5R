@@ -2,17 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SteamVR_TrackedObject))]
 public class Hand : MonoBehaviour {
 
     Grabbable hoverObject;
     Grabbable holdObject;
 
+    SteamVR_TrackedObject controllerObject;
+
+    void Awake() {
+        controllerObject = GetComponent<SteamVR_TrackedObject>();
+    }
+
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Space) && hoverObject && hoverObject.IsGrabbable() && !holdObject) {
+        if (Controller.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && hoverObject && hoverObject.IsGrabbable() && !holdObject) {
             hoverObject.Grab(this);
             holdObject = hoverObject;
-        }
-        else if (Input.GetKeyUp(KeyCode.Space) && holdObject) {
+        } else if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Grip) && holdObject) {
             holdObject.Release();
             holdObject = null;
         }
@@ -34,5 +40,9 @@ public class Hand : MonoBehaviour {
             return;
 
         hoverObject = otherGrabbable;
+    }
+
+    private SteamVR_Controller.Device Controller {
+        get { return SteamVR_Controller.Input((int)controllerObject.index); }
     }
 }
