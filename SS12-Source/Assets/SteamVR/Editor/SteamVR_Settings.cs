@@ -43,7 +43,7 @@ public class SteamVR_Settings : EditorWindow
 	const bool recommended_RunInBackground = true;
 	const ResolutionDialogSetting recommended_DisplayResolutionDialog = ResolutionDialogSetting.HiddenByDefault;
 	const bool recommended_ResizableWindow = true;
-	const D3D11FullscreenMode recommended_FullscreenMode = D3D11FullscreenMode.FullscreenWindow;
+	const FullScreenMode recommended_FullscreenMode = FullScreenMode.FullScreenWindow;
 	const bool recommended_VisibleInBackground = true;
 #if (UNITY_5_4 || UNITY_5_3 || UNITY_5_2 || UNITY_5_1 || UNITY_5_0)
 	const RenderingPath recommended_RenderPath = RenderingPath.Forward;
@@ -73,7 +73,7 @@ public class SteamVR_Settings : EditorWindow
 				PlayerSettings.SplashScreen.show != recommended_ShowUnitySplashScreen) ||
 #endif
 			(!EditorPrefs.HasKey(ignore + defaultIsFullScreen) &&
-				PlayerSettings.defaultIsFullScreen != recommended_DefaultIsFullScreen) ||
+				(recommended_DefaultIsFullScreen == (PlayerSettings.fullScreenMode != FullScreenMode.FullScreenWindow))) ||
 			(!EditorPrefs.HasKey(ignore + defaultScreenSize) &&
 				(PlayerSettings.defaultScreenWidth != recommended_DefaultScreenWidth ||
 				PlayerSettings.defaultScreenHeight != recommended_DefaultScreenHeight)) ||
@@ -84,7 +84,7 @@ public class SteamVR_Settings : EditorWindow
 			(!EditorPrefs.HasKey(ignore + resizableWindow) &&
 				PlayerSettings.resizableWindow != recommended_ResizableWindow) ||
 			(!EditorPrefs.HasKey(ignore + fullscreenMode) &&
-				PlayerSettings.d3d11FullscreenMode != recommended_FullscreenMode) ||
+				PlayerSettings.fullScreenMode != recommended_FullscreenMode) ||
 			(!EditorPrefs.HasKey(ignore + visibleInBackground) &&
 				PlayerSettings.visibleInBackground != recommended_VisibleInBackground) ||
 #if (UNITY_5_4 || UNITY_5_3 || UNITY_5_2 || UNITY_5_1 || UNITY_5_0)
@@ -280,17 +280,16 @@ public class SteamVR_Settings : EditorWindow
 		}
 #endif
 		if (!EditorPrefs.HasKey(ignore + defaultIsFullScreen) &&
-			PlayerSettings.defaultIsFullScreen != recommended_DefaultIsFullScreen)
-		{
+			(recommended_DefaultIsFullScreen == (PlayerSettings.fullScreenMode != FullScreenMode.FullScreenWindow))) {
 			++numItems;
 
-			GUILayout.Label(defaultIsFullScreen + string.Format(currentValue, PlayerSettings.defaultIsFullScreen));
+			GUILayout.Label(defaultIsFullScreen + string.Format(currentValue, PlayerSettings.fullScreenMode));
 
 			GUILayout.BeginHorizontal();
 
 			if (GUILayout.Button(string.Format(useRecommended, recommended_DefaultIsFullScreen)))
 			{
-				PlayerSettings.defaultIsFullScreen = recommended_DefaultIsFullScreen;
+				PlayerSettings.fullScreenMode = recommended_DefaultIsFullScreen ? recommended_FullscreenMode : FullScreenMode.Windowed;
 			}
 
 			GUILayout.FlexibleSpace();
@@ -402,17 +401,17 @@ public class SteamVR_Settings : EditorWindow
 		}
 
 		if (!EditorPrefs.HasKey(ignore + fullscreenMode) &&
-			PlayerSettings.d3d11FullscreenMode != recommended_FullscreenMode)
+			PlayerSettings.fullScreenMode != recommended_FullscreenMode)
 		{
 			++numItems;
 
-			GUILayout.Label(fullscreenMode + string.Format(currentValue, PlayerSettings.d3d11FullscreenMode));
+			GUILayout.Label(fullscreenMode + string.Format(currentValue, PlayerSettings.fullScreenMode));
 
 			GUILayout.BeginHorizontal();
 
 			if (GUILayout.Button(string.Format(useRecommended, recommended_FullscreenMode)))
 			{
-				PlayerSettings.d3d11FullscreenMode = recommended_FullscreenMode;
+				PlayerSettings.fullScreenMode = recommended_FullscreenMode;
 			}
 
 			GUILayout.FlexibleSpace();
@@ -598,7 +597,7 @@ public class SteamVR_Settings : EditorWindow
 					PlayerSettings.SplashScreen.show = recommended_ShowUnitySplashScreen;
 #endif
 				if (!EditorPrefs.HasKey(ignore + defaultIsFullScreen))
-					PlayerSettings.defaultIsFullScreen = recommended_DefaultIsFullScreen;
+					PlayerSettings.fullScreenMode = recommended_DefaultIsFullScreen ? recommended_FullscreenMode : FullScreenMode.Windowed;
 				if (!EditorPrefs.HasKey(ignore + defaultScreenSize))
 				{
 					PlayerSettings.defaultScreenWidth = recommended_DefaultScreenWidth;
@@ -611,7 +610,7 @@ public class SteamVR_Settings : EditorWindow
 				if (!EditorPrefs.HasKey(ignore + resizableWindow))
 					PlayerSettings.resizableWindow = recommended_ResizableWindow;
 				if (!EditorPrefs.HasKey(ignore + fullscreenMode))
-					PlayerSettings.d3d11FullscreenMode = recommended_FullscreenMode;
+					PlayerSettings.fullScreenMode = recommended_FullscreenMode;
 				if (!EditorPrefs.HasKey(ignore + visibleInBackground))
 					PlayerSettings.visibleInBackground = recommended_VisibleInBackground;
 #if (UNITY_5_4 || UNITY_5_3 || UNITY_5_2 || UNITY_5_1 || UNITY_5_0)
@@ -645,7 +644,7 @@ public class SteamVR_Settings : EditorWindow
 					if (PlayerSettings.SplashScreen.show != recommended_ShowUnitySplashScreen)
 #endif
 						EditorPrefs.SetBool(ignore + showUnitySplashScreen, true);
-					if (PlayerSettings.defaultIsFullScreen != recommended_DefaultIsFullScreen)
+					if (recommended_DefaultIsFullScreen == (PlayerSettings.fullScreenMode != FullScreenMode.FullScreenWindow))
 						EditorPrefs.SetBool(ignore + defaultIsFullScreen, true);
 					if (PlayerSettings.defaultScreenWidth != recommended_DefaultScreenWidth ||
 						PlayerSettings.defaultScreenHeight != recommended_DefaultScreenHeight)
@@ -656,7 +655,7 @@ public class SteamVR_Settings : EditorWindow
 						EditorPrefs.SetBool(ignore + displayResolutionDialog, true);
 					if (PlayerSettings.resizableWindow != recommended_ResizableWindow)
 						EditorPrefs.SetBool(ignore + resizableWindow, true);
-					if (PlayerSettings.d3d11FullscreenMode != recommended_FullscreenMode)
+					if (PlayerSettings.fullScreenMode != recommended_FullscreenMode)
 						EditorPrefs.SetBool(ignore + fullscreenMode, true);
 					if (PlayerSettings.visibleInBackground != recommended_VisibleInBackground)
 						EditorPrefs.SetBool(ignore + visibleInBackground, true);
