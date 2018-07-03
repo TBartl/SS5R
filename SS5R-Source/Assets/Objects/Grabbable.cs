@@ -7,9 +7,11 @@ public class Grabbable : MonoBehaviour {
 
     Rigidbody rb;
     Hand grabber;
+    VelocityTracker velocityTracker;
 
     void Awake() {
         rb = this.GetComponent<Rigidbody>();
+        velocityTracker = this.GetComponent<VelocityTracker>();
     }
 
     public bool IsGrabbable() {
@@ -22,11 +24,11 @@ public class Grabbable : MonoBehaviour {
         this.transform.parent = grabber.transform;
     }
 
-    public void Release(Vector3 releaseVelocity, Vector3 angularVelocity) {
+    public void Release() {
         grabber = null;
         rb.isKinematic = false;
-        rb.velocity = releaseVelocity;
-        rb.angularVelocity = angularVelocity;
+        rb.velocity = velocityTracker.GetVelocity();
+        rb.angularVelocity = velocityTracker.GetAngularVelocity();
         this.transform.parent = null;
     }
 }
