@@ -5,8 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(SteamVR_TrackedObject))]
 public class Hand : MonoBehaviour {
 
-    Grabbable hoverObject;
-    Grabbable holdObject;
+    IGrabbable hoverObject;
+    IGrabbable holdObject;
 
     SteamVR_TrackedObject controllerObject;
 
@@ -15,13 +15,21 @@ public class Hand : MonoBehaviour {
     }
 
     void Update() {
-        if (Controller.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && hoverObject && hoverObject.IsGrabbable() && !holdObject) {
-            hoverObject.Grab(this);
-            holdObject = hoverObject;
-        } else if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Grip) && holdObject) {
-            holdObject.Release();
-            holdObject = null;
+        if (Controller.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && hoverObject != null && holdObject == null) {
+            hoverObject.TryGrab(this);
+        } else if (Controller.GetPressUp(SteamVR_Controller.ButtonMask.Grip) && holdObject != null) {
+            holdObject.TryRelease(this);
         }
+    }
+
+    public void PlaceInHand(Grabbable obj) {
+        if (holdObject != null) {
+            Debug.LogError("Tried to pick up an object while holding one!");
+        }
+        holdObject = obj;
+    }
+    public void Release() {
+        holdObject = null;
     }
 
     void FixedUpdate() {
@@ -29,14 +37,11 @@ public class Hand : MonoBehaviour {
     }
 
     void OnTriggerStay(Collider other) {
-        if (holdObject)
+        if (holdObject != null)
             return;
 
-        Grabbable otherGrabbable = other.GetComponent<Grabbable>();
-        if (!otherGrabbable)
-            return;
-
-        if (!otherGrabbable.IsGrabbable())
+        IGrabbable otherGrabbable = other.GetComponent<IGrabbable>();
+        if (otherGrabbable == null)
             return;
 
         hoverObject = otherGrabbable;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Grabbable : MonoBehaviour {
+public class Grabbable : MonoBehaviour, IGrabbable {
 
     Rigidbody rb;
     Hand grabber;
@@ -14,21 +14,21 @@ public class Grabbable : MonoBehaviour {
         velocityTracker = this.GetComponent<VelocityTracker>();
     }
 
-    public bool IsGrabbable() {
-        return (grabber == false);
-    }
-
-    public void Grab(Hand newGrabber) {
-        grabber = newGrabber;
+    public void TryGrab(Hand newGrabber) {
+        if (grabber)
+            return;
         rb.isKinematic = true;
-        this.transform.parent = grabber.transform;
+        this.transform.parent = newGrabber.transform;
+        grabber = newGrabber;
+        newGrabber.PlaceInHand(this);
     }
 
-    public void Release() {
+    public void TryRelease(Hand hand) {
         grabber = null;
         rb.isKinematic = false;
         rb.velocity = velocityTracker.GetVelocity();
         rb.angularVelocity = velocityTracker.GetAngularVelocity();
         this.transform.parent = null;
+        hand.Release();
     }
 }
