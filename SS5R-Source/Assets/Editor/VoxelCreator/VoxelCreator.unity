@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 1974196131}
   - component: {fileID: 1974196130}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: VoxelCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +191,7 @@ Transform:
   m_GameObject: {fileID: 1974196128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 1}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 0.125}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -600,7 +600,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &556949815
+--- !u!21 &314555980
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -690,7 +690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
---- !u!43 &1475121651
+--- !u!43 &1639893323
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -904,11 +904,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 556949815}
+      objectReference: {fileID: 314555980}
     - target: {fileID: 33759674114627102, guid: 02d677050373c0445878dc592287b9bc,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1475121651}
+      objectReference: {fileID: 1639893323}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02d677050373c0445878dc592287b9bc, type: 3}

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Hand : MonoBehaviour {
 
     IGrabbable hoverObject;
-    IGrabbable holdObject;
+    Grabbable holdObject;
 
     SteamVR_TrackedObject controllerObject;
 
@@ -27,9 +27,16 @@ public class Hand : MonoBehaviour {
             Debug.LogError("Tried to pick up an object while holding one!");
         }
         holdObject = obj;
+
+        FixedJoint joint = gameObject.AddComponent<FixedJoint>();
+        joint.breakForce = 20000;
+        joint.breakTorque = 20000;
+        joint.connectedBody = obj.GetComponent<Rigidbody>();
+        
     }
     public void Release() {
         holdObject = null;
+        Destroy(this.GetComponent<FixedJoint>());
     }
 
     void FixedUpdate() {

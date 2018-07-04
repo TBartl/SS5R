@@ -17,18 +17,14 @@ public class Grabbable : MonoBehaviour, IGrabbable {
     public void TryGrab(Hand newGrabber) {
         if (grabber)
             return;
-        rb.isKinematic = true;
-        this.transform.parent = newGrabber.transform;
         grabber = newGrabber;
         newGrabber.PlaceInHand(this);
     }
 
     public void TryRelease(Hand hand) {
         grabber = null;
-        rb.isKinematic = false;
         rb.velocity = velocityTracker.GetVelocity();
         rb.angularVelocity = velocityTracker.GetAngularVelocity();
-        this.transform.parent = null;
         hand.Release();
     }
 }
