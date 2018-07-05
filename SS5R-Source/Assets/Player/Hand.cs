@@ -45,14 +45,14 @@ public class Hand : MonoBehaviour {
         hoverObject = null;
     }
 
-    void OnTriggerStay(Collider other) {
+    void OnTriggerStay(Collider thisColl) {
         if (holdObject != null)
             return;
 
-        IGrabbable otherGrabbable = other.GetComponent<IGrabbable>();
-        if (otherGrabbable == null)
+        IGrabbable thisGrabbable = thisColl.GetComponent<IGrabbable>();
+        if (thisGrabbable == null)
             return;
 
-        hoverObject = otherGrabbable;
+        hoverObject = thisGrabbable;
     }
 }
