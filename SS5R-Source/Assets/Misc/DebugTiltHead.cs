@@ -13,7 +13,7 @@ public class DebugTiltHead : MonoBehaviour {
         }
     }
 
-    void OnPreRender() {
+    void OnPreCull() {
         if (tilt) {
             Debug.Log(tilt);
             this.transform.rotation *= Quaternion.Euler(45, 0, 0);
