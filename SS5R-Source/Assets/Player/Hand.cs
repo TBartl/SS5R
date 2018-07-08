@@ -46,6 +46,7 @@ public class Hand : MonoBehaviour {
     }
 
     void OnTriggerStay(Collider thisColl) {
+        Debug.Log(thisColl);
         if (holdObject != null)
             return;
 
@@ -54,5 +55,6 @@ public class Hand : MonoBehaviour {
             return;
 
         hoverObject = thisGrabbable;
+        // Debug.Log(hoverObject);
     }
 }
