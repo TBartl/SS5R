@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 public class Grabbable : MonoBehaviour, IGrabbable {
 
     Rigidbody rb;
     Hand grabber;
     VelocityTracker velocityTracker;
 
-    void Awake() {
+    void Update() {
         rb = this.GetComponent<Rigidbody>();
         velocityTracker = this.GetComponent<VelocityTracker>();
     }

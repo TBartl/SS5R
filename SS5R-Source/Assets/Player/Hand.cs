@@ -29,7 +29,6 @@ public class Hand : MonoBehaviour {
             Debug.LogError("Tried to pick up an object while holding one!");
         }
         holdObject = obj;
-
         FixedJoint joint = gameObject.AddComponent<FixedJoint>();
         joint.breakForce = 20000;
         joint.breakTorque = 20000;
