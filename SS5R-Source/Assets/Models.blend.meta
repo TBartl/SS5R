@@ -13,6 +13,7 @@ ModelImporter:
     100014: BoxOfCubesCubes
     100016: Table
     100018: ProximitySensor
+    100020: Circle
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -23,6 +24,7 @@ ModelImporter:
     400014: BoxOfCubesCubes
     400016: Table
     400018: ProximitySensor
+    400020: Circle
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -34,6 +36,7 @@ ModelImporter:
     2100016: unnamed
     2100018: None__Prox_Sensor_png_001
     2100020: Material_003__Table_png
+    2100022: None__Prox_Sensor_png
     2300000: ReferenceCube
     2300002: ReferenceCube_001
     2300004: Light
@@ -43,6 +46,7 @@ ModelImporter:
     2300012: BoxOfCubesCubes
     2300014: Table
     2300016: ProximitySensor
+    2300018: Circle
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -52,6 +56,7 @@ ModelImporter:
     3300012: BoxOfCubesCubes
     3300014: Table
     3300016: ProximitySensor
+    3300018: Circle
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -61,6 +66,7 @@ ModelImporter:
     4300012: BoxOfCubes
     4300014: Table
     4300016: ProximitySensor
+    4300018: Circle
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
