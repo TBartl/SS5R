@@ -14,6 +14,8 @@ ModelImporter:
     100016: Table
     100018: ProximitySensor
     100020: Circle
+    100022: Hand
+    100024: Screwdriver
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -25,6 +27,8 @@ ModelImporter:
     400016: Table
     400018: ProximitySensor
     400020: Circle
+    400022: Hand
+    400024: Screwdriver
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -37,6 +41,8 @@ ModelImporter:
     2100018: None__Prox_Sensor_png_001
     2100020: Material_003__Table_png
     2100022: None__Prox_Sensor_png
+    2100024: Material_004
+    2100026: None__Screwdriver_png
     2300000: ReferenceCube
     2300002: ReferenceCube_001
     2300004: Light
@@ -47,6 +53,8 @@ ModelImporter:
     2300014: Table
     2300016: ProximitySensor
     2300018: Circle
+    2300020: Hand
+    2300022: Screwdriver
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -57,6 +65,8 @@ ModelImporter:
     3300014: Table
     3300016: ProximitySensor
     3300018: Circle
+    3300020: Hand
+    3300022: Screwdriver
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -67,6 +77,8 @@ ModelImporter:
     4300014: Table
     4300016: ProximitySensor
     4300018: Circle
+    4300020: Hand
+    4300022: Screwdriver
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
