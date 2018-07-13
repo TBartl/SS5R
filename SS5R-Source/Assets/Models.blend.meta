@@ -16,6 +16,7 @@ ModelImporter:
     100020: Circle
     100022: Hand
     100024: Screwdriver
+    100026: ObjModelViveController
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -29,6 +30,7 @@ ModelImporter:
     400020: Circle
     400022: Hand
     400024: Screwdriver
+    400026: ObjModelViveController
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -55,6 +57,7 @@ ModelImporter:
     2300018: Circle
     2300020: Hand
     2300022: Screwdriver
+    2300024: ObjModelViveController
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -67,6 +70,7 @@ ModelImporter:
     3300018: Circle
     3300020: Hand
     3300022: Screwdriver
+    3300024: ObjModelViveController
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -79,6 +83,7 @@ ModelImporter:
     4300018: Circle
     4300020: Hand
     4300022: Screwdriver
+    4300024: ObjModelViveController
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}

@@ -59,9 +59,10 @@
        y1="216.6855"
        x2="-196.84401"
        y2="151.87265"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.26458333,0,0,0.26458333,-147.80895,159.0593)" />
     <linearGradient
-       gradientTransform="translate(7.9999991,-9.7921875e-6)"
+       gradientTransform="matrix(0.26458333,0,0,0.26458333,-145.69228,159.0593)"
        inkscape:collect="always"
        xlink:href="#linearGradient3740"
        id="linearGradient3742-4"
@@ -78,9 +79,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.0875"
-     inkscape:cx="2184.6743"
-     inkscape:cy="-1964.6177"
+     inkscape:zoom="22.559852"
+     inkscape:cx="-753.50934"
+     inkscape:cy="339.59844"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -97,7 +98,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -107,24 +108,52 @@
      id="layer1">
     <rect
        id="rect3732"
-       width="64"
-       height="64"
+       width="16.933332"
+       height="16.933332"
        x="-200.98668"
-       y="152.28461"
-       style="stroke-width:0.26398653" />
+       y="199.35127"
+       style="stroke-width:0.06984644"
+       inkscape:export-filename="C:\Users\Thomas\Desktop\Projects\SS5R\SS5R-Source\Assets\Objects\Tools\Tool_Screwdriver.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
        id="rect3734"
-       width="8"
-       height="64"
+       width="2.1166666"
+       height="16.933332"
        x="-200.98668"
-       y="152.28461"
-       style="stroke-width:0.1883699;fill-opacity:1;fill:url(#linearGradient3742)" />
+       y="199.35127"
+       style="fill:url(#linearGradient3742);fill-opacity:1;stroke-width:0.04983954" />
     <rect
        id="rect3734-1"
-       width="8"
-       height="64"
-       x="-192.98668"
-       y="152.28461"
-       style="fill:url(#linearGradient3742-4);fill-opacity:1;stroke-width:0.1883699" />
+       width="2.1166666"
+       height="16.933332"
+       x="-198.87001"
+       y="199.35127"
+       style="fill:url(#linearGradient3742-4);fill-opacity:1;stroke-width:0.04983954" />
+    <image
+       y="281.42737"
+       x="-140.68274"
+       id="image836"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAALVBMVEXq9P1ODQxZDg5/FRl5eXmv
+q6yVFxBiEBB4Dg51ExMnEAlHR0daWlpwcHCJiYntvaXYAAAAAXRSTlMAQObYZgAAADVJREFUKJFj
+YBgFgwMwCikJChkwCcAFRFxDXdwExQrgAhptaR0dHW2zdu85c/YBVhUYZlAMAGoKDI9swwDzAAAA
+AElFTkSuQmCC
+"
+       preserveAspectRatio="none"
+       height="8.4666662"
+       width="8.4666662" />
+    <image
+       y="203.32288"
+       x="-196.50983"
+       id="image847"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAALVBMVEXq9P1ODQxZDg5/FRl5eXmv
+q6yVFxBiEBB4Dg51ExMnEAlHR0daWlpwcHCJiYntvaXYAAAAAXRSTlMAQObYZgAAADVJREFUKJFj
+YBgFgwMwCikJChkwCcAFRFxDXdwExQrgAhptaR0dHW2zdu85c/YBVhUYZlAMAGoKDI9swwDzAAAA
+AElFTkSuQmCC
+"
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="12.061519"
+       width="12.061519" />
   </g>
 </svg>
