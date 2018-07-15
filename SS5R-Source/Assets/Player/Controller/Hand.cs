@@ -17,9 +17,9 @@ public class Hand : MonoBehaviour {
     }
 
     void Update() {
-        if (controller.Get.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && hoverObject != null && holdObject == null) {
+        if (controller.Get.GetPressDown(SteamVR_Controller.ButtonMask.Trigger) && hoverObject != null && holdObject == null) {
             hoverObject.TryGrab(this);
-        } else if (controller.Get.GetPressUp(SteamVR_Controller.ButtonMask.Grip) && holdObject != null) {
+        } else if (controller.Get.GetPressUp(SteamVR_Controller.ButtonMask.Trigger) && holdObject != null) {
             holdObject.TryRelease(this);
         }
     }
