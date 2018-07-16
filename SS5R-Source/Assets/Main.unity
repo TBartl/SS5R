@@ -6720,6 +6720,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light Fixture (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 108923941230494482, guid: fbfefd9dbb350df44b4293d631d39e45,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbfefd9dbb350df44b4293d631d39e45, type: 3}
 --- !u!1001 &1647691638
@@ -7619,6 +7624,11 @@ PrefabInstance:
     - target: {fileID: 1317430997263022, guid: fbfefd9dbb350df44b4293d631d39e45, type: 3}
       propertyPath: m_Name
       value: Light Fixture (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 108923941230494482, guid: fbfefd9dbb350df44b4293d631d39e45,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbfefd9dbb350df44b4293d631d39e45, type: 3}
