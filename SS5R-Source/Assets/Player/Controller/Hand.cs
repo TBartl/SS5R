@@ -45,7 +45,6 @@ public class Hand : MonoBehaviour {
     }
 
     void OnTriggerStay(Collider thisColl) {
-        Debug.Log(thisColl);
         if (holdObject != null)
             return;
 

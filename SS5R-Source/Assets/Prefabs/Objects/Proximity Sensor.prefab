@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1147131515462890881}
   - component: {fileID: 1147131515462890880}
+  - component: {fileID: 1596248817017515220}
   - component: {fileID: 1147131515462890882}
   - component: {fileID: 1147131515462890883}
   - component: {fileID: 1147131515462890886}
   - component: {fileID: 1147131515462890887}
-  - component: {fileID: 8264640595512674743}
   - component: {fileID: 1746209441468746656}
   m_Layer: 0
   m_Name: Proximity Sensor
@@ -47,6 +47,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 928c1480ef2586347a981dc82e955eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1596248817017515220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147131515462890885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f159368be8971d49937cd08dac81e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1147131515462890882
@@ -121,18 +133,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &8264640595512674743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147131515462890885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81aaeda454d6b564196864625ebea210, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &1746209441468746656
 CapsuleCollider:
   m_ObjectHideFlags: 0
