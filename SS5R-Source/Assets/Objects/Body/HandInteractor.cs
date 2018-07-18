@@ -10,8 +10,11 @@ public class HandInteractor : Interactor {
     }
 
     void Update() {
-        if (this.hoverObject && this.GetComponent<Controller>().Get.GetPressDown(SteamVR_Controller.ButtonMask.Trigger)) {
-			Debug.Log(this.hoverObject);
+        Controller controller = this.GetComponent<Controller>();
+        if (controller.Get.GetPressDown(SteamVR_Controller.ButtonMask.Trigger) && hoverObject) {
+            this.GetComponent<HandContainer>().TryContain(this.hoverObject.GetComponent<Containable>());
+        } else if (controller.Get.GetPressUp(SteamVR_Controller.ButtonMask.Trigger)) {
+            this.GetComponent<HandContainer>().ReleaseAll();
         }
     }
 }

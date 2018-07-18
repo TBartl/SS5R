@@ -18,13 +18,21 @@ public class Containable : MonoBehaviour {
 
     public virtual void BeContained(Container container) {
         this.container = container;
-        this.transform.parent = container.transform;
+        FixedJoint joint = gameObject.AddComponent<FixedJoint>();
+        joint.breakForce = Mathf.Infinity;
+        joint.breakTorque = Mathf.Infinity;
+        joint.connectedBody = container.GetComponent<Rigidbody>();
     }
 
-    public virtual void Release() {
+    public virtual void BeReleased() {
         this.container = null;
-        this.transform.parent = null;
-
+        Destroy(this.GetComponent<FixedJoint>());
+        Rigidbody rb = this.GetComponent<Rigidbody>();
+        VelocityTracker velTracker = this.GetComponent<VelocityTracker>();
+        if (velTracker) {
+            rb.velocity = velTracker.GetVelocity();
+            rb.angularVelocity = velTracker.GetAngularVelocity();
+        }
     }
 
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Container : MonoBehaviour {
 
-    public int maxObjects;
+    public int maxObjects = 1;
 
     List<Containable> contained = new List<Containable>();
 
@@ -26,7 +26,7 @@ public class Container : MonoBehaviour {
 
     public void ReleaseAll() {
         foreach (Containable containable in contained) {
-			containable.Release();
+			containable.BeReleased();
         }
 		contained.Clear();
     }
