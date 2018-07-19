@@ -17,6 +17,24 @@ ModelImporter:
     100022: Hand
     100024: Screwdriver
     100026: ObjModelViveController
+    100028: Bone
+    100030: Hand_0
+    100032: HandRig
+    100034: Index
+    100036: Index_001
+    100038: Index_002
+    100040: Middle
+    100042: Middle_001
+    100044: Middle_002
+    100046: Pinkie
+    100048: Pinkie_001
+    100050: Pinkie_002
+    100052: Pointer
+    100054: Pointer_001
+    100056: Pointer_002
+    100058: Thumb
+    100060: Thumb_001
+    100062: Thumb_002
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -31,6 +49,24 @@ ModelImporter:
     400022: Hand
     400024: Screwdriver
     400026: ObjModelViveController
+    400028: Bone
+    400030: Hand_0
+    400032: HandRig
+    400034: Index
+    400036: Index_001
+    400038: Index_002
+    400040: Middle
+    400042: Middle_001
+    400044: Middle_002
+    400046: Pinkie
+    400048: Pinkie_001
+    400050: Pinkie_002
+    400052: Pointer
+    400054: Pointer_001
+    400056: Pointer_002
+    400058: Thumb
+    400060: Thumb_001
+    400062: Thumb_002
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -86,6 +122,7 @@ ModelImporter:
     4300024: ObjModelViveController
     7400000: Default Take
     9500000: //RootNode
+    13700000: Hand
   externalObjects: {}
   materials:
     importMaterials: 0
