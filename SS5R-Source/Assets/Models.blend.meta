@@ -121,6 +121,10 @@ ModelImporter:
     4300022: Screwdriver
     4300024: ObjModelViveController
     7400000: Default Take
+    7400002: Closed
+    7400004: Fist
+    7400006: Open
+    7400008: Point
     9500000: //RootNode
     13700000: Hand
   externalObjects: {}
