@@ -12,10 +12,11 @@ public class Container : MonoBehaviour {
         return containable && (contained.Count < maxObjects) && containable.CanBeContained(this);
     }
 
-    public void TryContain(Containable containable) {
+    public bool TryContain(Containable containable) {
         if (!CanContain(containable))
-            return;
+            return false;
         containable.TryBeContained(this);
+        return contained.Contains(containable);
     }
 
     // This should never be called directly
