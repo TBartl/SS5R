@@ -379,36 +379,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head: {fileID: 4943505500008868}
-  zOffSet: 0.373
-  pitchCurve:
+  baseOffset: {x: 0, y: -0.46, z: -0.147}
+  pitchOffsetCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0.21205685
-      outSlope: 0.21205685
-      tangentMode: 0
+      inSlope: 0.0837977
+      outSlope: 0.0837977
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.38282207
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.2674919
-      value: 0.03890031
-      inSlope: 0.06936206
-      outSlope: 0.06936206
+      time: 0.65860087
+      value: 0.05518924
+      inSlope: 0.13561277
+      outSlope: 0.13561277
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.98274225
-      value: 0.049667235
-      inSlope: 0.006964896
-      outSlope: 0.006964896
-      tangentMode: 0
+      time: 1.0082222
+      value: 0.13672781
+      inSlope: 0.23321965
+      outSlope: 0.23321965
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0.21646534
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rollOffsetCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.08999884
+      outSlope: 0.08999884
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.08999884
+      inSlope: 0.08999884
+      outSlope: 0.08999884
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
