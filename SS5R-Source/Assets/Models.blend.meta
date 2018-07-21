@@ -37,6 +37,8 @@ ModelImporter:
     100062: Thumb_002
     100064: Body
     100066: BodyOriginal
+    100068: Belt
+    100070: BeltOriginal
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -71,6 +73,8 @@ ModelImporter:
     400062: Thumb_002
     400064: Body
     400066: BodyOriginal
+    400068: Belt
+    400070: BeltOriginal
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -100,6 +104,8 @@ ModelImporter:
     2300024: ObjModelViveController
     2300026: Body
     2300028: BodyOriginal
+    2300030: Belt
+    2300032: BeltOriginal
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -115,6 +121,8 @@ ModelImporter:
     3300024: ObjModelViveController
     3300026: Body
     3300028: BodyOriginal
+    3300030: Belt
+    3300032: BeltOriginal
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -130,6 +138,8 @@ ModelImporter:
     4300024: ObjModelViveController
     4300026: Body
     4300028: BodyOriginal
+    4300030: BeltOriginal
+    4300032: Belt
     7400000: Default Take
     7400002: Closed
     7400004: Fist
