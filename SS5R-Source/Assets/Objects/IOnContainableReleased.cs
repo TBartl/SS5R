@@ -3,5 +3,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public interface IOnContainableReleased {
-	void OnReleased(Containable released);
+	void OnReleased(Container from);
 }

@@ -5,13 +5,22 @@ using UnityEngine;
 [RequireComponent(typeof(Containable))]
 public class DropOnContainable : Interactor, IOnContainableReleased {
 
+    Container recentlyReleasedFrom = null;
+
     public override bool CanInteractWith(Interactable interactable) {
-        return base.CanInteractWith(interactable) && interactable.GetComponent<DropOnContainer>() && this.GetComponent<Containable>().IsContained();
+        if (!base.CanInteractWith(interactable))
+            return false;
+        if (!interactable.GetComponent<DropOnContainer>())
+            return false;
+        return this.GetComponent<Containable>().IsContained() ||
+        (this.recentlyReleasedFrom && (this.recentlyReleasedFrom != this.hoverObject.GetComponent<Container>()));
     }
 
-    public void OnReleased(Containable containable) {
+    public void OnReleased(Container from) {
+        recentlyReleasedFrom = from;
         if (this.hoverObject && this.CanInteractWith(hoverObject)) {
-            this.hoverObject.InteractWith(this);
+            this.hoverObject.GetComponent<DropOnContainer>().InteractWith(this);
         }
+        recentlyReleasedFrom = null;
     }
 }

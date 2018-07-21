@@ -32,7 +32,7 @@ public class VelocityTracker : MonoBehaviour, IOnContainableReleased {
         return velocity;
     }
 
-    public void OnReleased(Containable containable) {
+    public void OnReleased(Container from) {
         Rigidbody rb = this.GetComponent<Rigidbody>();
         rb.velocity = this.GetVelocity();
         rb.angularVelocity = this.GetAngularVelocity();

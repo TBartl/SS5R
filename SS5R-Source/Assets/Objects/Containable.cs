@@ -27,11 +27,11 @@ public class Containable : MonoBehaviour {
         joint.connectedBody = container.GetComponent<Rigidbody>();
     }
 
-    public virtual void BeReleased() {
+    public virtual void BeReleased(Container container) {
         this.container = null;
         Destroy(this.GetComponent<FixedJoint>());
         foreach(IOnContainableReleased onReleased in this.GetComponents<IOnContainableReleased>()) {
-            onReleased.OnReleased(this);
+            onReleased.OnReleased(container);
         }
     }
 
