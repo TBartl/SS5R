@@ -27,9 +27,15 @@ public class Container : MonoBehaviour {
 
     public void ReleaseAll() {
         foreach (Containable containable in contained) {
-			containable.BeReleased();
+            containable.BeReleased();
+            SendReleasedMessage(containable);
         }
-		contained.Clear();
+        contained.Clear();
     }
 
+    void SendReleasedMessage(Containable released) {
+        foreach (IOnContainerRelease onContainerRelease in this.GetComponents<IOnContainerRelease>()) {
+            onContainerRelease.OnRelease(released);
+        }
+    }
 }

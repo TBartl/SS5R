@@ -9,7 +9,7 @@ public enum HandState {
     fist
 }
 
-public class HandInteractor : Interactor {
+public class HandInteractor : Interactor, IOnContainerRelease {
 
     HandState state = HandState.open;
 
@@ -47,5 +47,10 @@ public class HandInteractor : Interactor {
         foreach (IOnHandStateChange onChange in this.GetComponentsInChildren<IOnHandStateChange>()) {
             onChange.OnChange(newState);
         }
+    }
+
+    public void OnRelease(Containable released) {
+        if (this.state == HandState.closed)
+            UpdateState(HandState.fist);
     }
 }

@@ -7,7 +7,7 @@ public class Containable : MonoBehaviour {
     Container container = null;
 
     public virtual bool CanBeContained(Container container) {
-        return this.container == null;
+        return true;
     }
 
     public virtual void TryBeContained(Container container) {
@@ -17,6 +17,9 @@ public class Containable : MonoBehaviour {
     }
 
     public virtual void BeContained(Container container) {
+        if (this.container) {
+            this.container.ReleaseAll();
+        }
         this.container = container;
         FixedJoint joint = gameObject.AddComponent<FixedJoint>();
         joint.breakForce = Mathf.Infinity;
