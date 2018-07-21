@@ -14,8 +14,7 @@ public class HandInteractor : Interactor, IOnContainerRelease {
     HandState state = HandState.open;
 
     public override bool CanInteractWith(Interactable interactable) {
-        Containable interactContainable = interactable.GetComponent<Containable>();
-        return this.GetComponent<HandContainer>().CanContain(interactContainable);
+        return base.CanInteractWith(interactable) && this.state == HandState.open && this.GetComponent<HandContainer>().CanContain(interactable.GetComponent<Containable>());
     }
 
     void Update() {

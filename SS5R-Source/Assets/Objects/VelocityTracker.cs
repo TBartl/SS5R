@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VelocityTracker : MonoBehaviour {
+public class VelocityTracker : MonoBehaviour, IOnContainableReleased {
     Vector3 velocity;
     Vector3 angularVelocity;
     Vector3 lastPos = Vector3.zero;
@@ -31,4 +31,11 @@ public class VelocityTracker : MonoBehaviour {
     public Vector3 GetVelocity() {
         return velocity;
     }
+
+    public void OnReleased(Containable containable) {
+        Rigidbody rb = this.GetComponent<Rigidbody>();
+        rb.velocity = this.GetVelocity();
+        rb.angularVelocity = this.GetAngularVelocity();
+    }
+
 }

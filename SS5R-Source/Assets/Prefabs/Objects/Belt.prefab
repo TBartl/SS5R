@@ -12,7 +12,10 @@ GameObject:
   - component: {fileID: 3862514568118476948}
   - component: {fileID: 3862514568118476946}
   - component: {fileID: 3862514568118476951}
+  - component: {fileID: 4619637812068261324}
+  - component: {fileID: 7648741576759338348}
   - component: {fileID: 3862514568118476947}
+  - component: {fileID: 7936933469823647063}
   - component: {fileID: 3862514568118476944}
   - component: {fileID: 3862514568118476945}
   - component: {fileID: 3862514568118476974}
@@ -73,6 +76,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79f8d731da210342bec72af65503c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4619637812068261324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3862514568118476975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad00f968623282449560e42e3c619dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxObjects: 6
+--- !u!114 &7648741576759338348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3862514568118476975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f903a022bf308e94699a0c6dba6fe112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &3862514568118476947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -85,7 +113,20 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.092185, z: 0.35}
-  m_Center: {x: 0, y: 0.003772501, z: 0.0006859973}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &7936933469823647063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3862514568118476975}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 0.1, z: 0.42}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3862514568118476944
 Rigidbody:
   m_ObjectHideFlags: 0

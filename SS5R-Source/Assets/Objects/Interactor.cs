@@ -6,7 +6,7 @@ public class Interactor : MonoBehaviour {
     protected Interactable hoverObject;
 
     public virtual bool CanInteractWith(Interactable interactable) {
-        return true;
+        return interactable != null;
     }
 
     void FixedUpdate() {
@@ -16,6 +16,7 @@ public class Interactor : MonoBehaviour {
     void OnTriggerStay(Collider other) {
         Interactable otherInteractable = other.GetComponent<Interactable>();
         if (otherInteractable && otherInteractable.GetInteractable(this)) {
+            Debug.Log(this.name + otherInteractable.name);
 			hoverObject = otherInteractable;
         }
     }

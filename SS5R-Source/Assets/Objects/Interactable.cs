@@ -8,7 +8,7 @@ public class Interactable : MonoBehaviour {
 		return true;
 	}
 
-	public virtual void Interact(Interactor interactor) {
+	public virtual void InteractWith(Interactor interactor) {
 
 	}
 }

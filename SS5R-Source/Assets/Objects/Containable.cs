@@ -30,12 +30,13 @@ public class Containable : MonoBehaviour {
     public virtual void BeReleased() {
         this.container = null;
         Destroy(this.GetComponent<FixedJoint>());
-        Rigidbody rb = this.GetComponent<Rigidbody>();
-        VelocityTracker velTracker = this.GetComponent<VelocityTracker>();
-        if (velTracker) {
-            rb.velocity = velTracker.GetVelocity();
-            rb.angularVelocity = velTracker.GetAngularVelocity();
+        foreach(IOnContainableReleased onReleased in this.GetComponents<IOnContainableReleased>()) {
+            onReleased.OnReleased(this);
         }
+    }
+
+    public bool IsContained() {
+        return this.container;
     }
 
 }
