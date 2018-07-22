@@ -10,13 +10,15 @@ public class Interactor : MonoBehaviour {
     }
 
     void FixedUpdate() {
+        if (hoverObject)
+            hoverObject.SetHovered(this);
         hoverObject = null;
     }
 
     void OnTriggerStay(Collider other) {
         Interactable otherInteractable = other.GetComponent<Interactable>();
         if (otherInteractable && otherInteractable.GetInteractable(this)) {
-			hoverObject = otherInteractable;
+            hoverObject = otherInteractable;
         }
     }
 

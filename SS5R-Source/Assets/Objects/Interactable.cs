@@ -11,4 +11,10 @@ public class Interactable : MonoBehaviour {
 	public virtual void InteractWith(Interactor interactor) {
 
 	}
+
+	public void SetHovered(Interactor interactor) {
+		foreach(IOnHovered onHovered in this.GetComponentsInChildren<IOnHovered>()) {
+			onHovered.OnHovered(interactor);
+		}
+	}
 }
