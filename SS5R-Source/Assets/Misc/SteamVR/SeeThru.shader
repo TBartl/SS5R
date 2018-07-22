@@ -77,6 +77,7 @@ Shader "Valve/VR/SeeThru"
 				float4 MainPS( VertexOutput i ) : SV_Target
 				{
 					float4 vColor = _Color.rgba;
+					vColor.a = sin(_Time * 200) * .03 + .1;
 				
 					return vColor.rgba;
 				}
