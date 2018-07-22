@@ -5,7 +5,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour {
 
 	public virtual bool GetInteractable(Interactor interactor) {
-		return true;
+		return interactor && interactor.CanInteractWith(this);
 	}
 
 	public virtual void InteractWith(Interactor interactor) {

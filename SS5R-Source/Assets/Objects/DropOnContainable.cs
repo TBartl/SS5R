@@ -12,8 +12,12 @@ public class DropOnContainable : Interactor, IOnContainableReleased {
             return false;
         if (!interactable.GetComponent<DropOnContainer>())
             return false;
-        return this.GetComponent<Containable>().IsContained() ||
-        (this.recentlyReleasedFrom && (this.recentlyReleasedFrom != this.hoverObject.GetComponent<Container>()));
+        Container currentContainer = recentlyReleasedFrom;
+        if (currentContainer == null)
+            currentContainer = this.GetComponent<Containable>().GetContainer();
+        if (currentContainer == null)
+            return false;
+        return currentContainer != interactable.GetComponent<Container>();
     }
 
     public void OnReleased(Container from) {

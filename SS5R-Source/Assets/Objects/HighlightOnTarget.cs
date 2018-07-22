@@ -19,9 +19,9 @@ public class HighlightOnTarget : MonoBehaviour, IOnHovered {
         while (hoverBuffer >= 0) {
             yield return null;
         }
-		mats.RemoveAt(mats.Count - 1);
+        mats.RemoveAt(mats.Count - 1);
         mr.materials = mats.ToArray();
-		coroutine = null;
+        coroutine = null;
     }
 
     void FixedUpdate() {

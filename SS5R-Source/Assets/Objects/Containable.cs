@@ -35,7 +35,7 @@ public class Containable : MonoBehaviour {
         }
     }
 
-    public bool IsContained() {
+    public Container GetContainer() {
         return this.container;
     }
 
