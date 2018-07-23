@@ -24,6 +24,13 @@ public class Container : MonoBehaviour {
         containable.BeContained(this);
         contained.Add(containable);
     }
+    public void Release(Containable containable) {
+        if (contained.Contains(containable)) {
+            containable.BeReleased(this);
+            SendReleasedMessage(containable);
+            contained.Remove(containable);
+        }
+    }
 
     public void ReleaseAll() {
         foreach (Containable containable in contained) {

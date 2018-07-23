@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad00f968623282449560e42e3c619dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxObjects: 1
+  maxObjects: 6
 --- !u!1001 &7392805640662302042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,6 +133,5 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 01ff7e23e369b524eba0db46f51c0897, type: 2}
-    m_RemovedComponents:
-    - {fileID: 2426527874420364387, guid: 42b8d732eac8be741952c563f2eca62d, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42b8d732eac8be741952c563f2eca62d, type: 3}

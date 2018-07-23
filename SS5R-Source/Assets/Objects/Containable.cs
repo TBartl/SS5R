@@ -18,7 +18,7 @@ public class Containable : MonoBehaviour {
 
     public virtual void BeContained(Container container) {
         if (this.container) {
-            this.container.ReleaseAll();
+            this.container.Release(this);
         }
         this.container = container;
         FixedJoint joint = gameObject.AddComponent<FixedJoint>();
