@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Interactable))]
-public class HighlightOnTarget : MonoBehaviour, IOnHovered {
+public class HighlightOnHover : MonoBehaviour, IOnHovered {
 
     public Material highlightMaterial;
 
@@ -11,11 +11,22 @@ public class HighlightOnTarget : MonoBehaviour, IOnHovered {
 
     int hoverBuffer = 0;
 
-    IEnumerator RunHighlight() {
+    IEnumerator RunHighlight(Interactor interactor) {
         MeshRenderer mr = this.GetComponent<MeshRenderer>();
         List<Material> mats = new List<Material>(mr.materials);
         mats.Add(highlightMaterial);
         mr.materials = mats.ToArray();
+
+        Controller interactorController = interactor.GetComponent<Controller>();
+        if (!interactorController) {
+            Containable interactorContainable = interactor.GetComponent<Containable>();
+            if (interactorContainable && interactorContainable.GetContainer()) {
+                interactorController = interactorContainable.GetContainer().GetComponent<Controller>();
+            }
+        }
+        if (interactorController) {
+            interactorController.Get.TriggerHapticPulse(2000);
+        }
         while (hoverBuffer >= 0) {
             yield return null;
         }
@@ -31,6 +42,6 @@ public class HighlightOnTarget : MonoBehaviour, IOnHovered {
     public void OnHovered(Interactor interactor) {
         hoverBuffer = 2;
         if (coroutine == null)
-            coroutine = StartCoroutine(RunHighlight());
+            coroutine = StartCoroutine(RunHighlight(interactor));
     }
 }
