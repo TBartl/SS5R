@@ -22,7 +22,10 @@ public class HandInteractor : Interactor, IOnContainerRelease {
         if ((state == HandState.open || state == HandState.point) &&
             controller.Get.GetPressDown(SteamVR_Controller.ButtonMask.Trigger)
         ) {
-            if (hoverObject && this.GetComponent<HandContainer>().TryContain(this.hoverObject.GetComponent<Containable>()))
+            if (hoverObject) {
+                hoverObject.InteractWith(this);
+            }
+            if (hoverObject && hoverObject.GetComponent<Containable>().GetContainer() == this.GetComponent<Container>())
                 UpdateState(HandState.closed);
             else
                 UpdateState(HandState.fist);
