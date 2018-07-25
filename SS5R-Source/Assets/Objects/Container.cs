@@ -9,7 +9,7 @@ public class Container : MonoBehaviour {
     List<Containable> contained = new List<Containable>();
 
     public bool CanContain(Containable containable) {
-        return containable && (contained.Count < maxObjects) && containable.CanBeContained(this);
+        return containable && (contained.Count < maxObjects) && !contained.Contains(containable) && containable.CanBeContained(this);
     }
 
     public bool TryContain(Containable containable) {
