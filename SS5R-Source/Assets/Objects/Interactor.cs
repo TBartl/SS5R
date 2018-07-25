@@ -16,9 +16,11 @@ public class Interactor : MonoBehaviour {
     }
 
     void OnTriggerStay(Collider other) {
-        Interactable otherInteractable = other.GetComponent<Interactable>();
-        if (otherInteractable && otherInteractable.GetInteractable(this)) {
-            hoverObject = otherInteractable;
+        foreach (Interactable otherInteractable in other.GetComponents<Interactable>()) {
+            if (otherInteractable.GetInteractable(this)) {
+                hoverObject = otherInteractable;
+                return;
+            }
         }
     }
 
