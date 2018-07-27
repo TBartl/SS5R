@@ -17,6 +17,7 @@ public class DropOnContainable : Interactor, IOnContainableReleased {
             currentContainer = this.GetComponent<Containable>().GetContainer();
         if (currentContainer == null)
             return false;
+            Debug.Log(currentContainer);
         return currentContainer != interactable.GetComponent<Container>();
     }
 
