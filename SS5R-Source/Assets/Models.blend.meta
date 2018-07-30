@@ -41,6 +41,7 @@ ModelImporter:
     100070: BeltOriginal
     100072: Cube
     100074: Wrench
+    100076: Wrench_001
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -79,6 +80,7 @@ ModelImporter:
     400070: BeltOriginal
     400072: Cube
     400074: Wrench
+    400076: Wrench_001
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -112,6 +114,7 @@ ModelImporter:
     2300032: BeltOriginal
     2300034: Cube
     2300036: Wrench
+    2300038: Wrench_001
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -131,6 +134,7 @@ ModelImporter:
     3300032: BeltOriginal
     3300034: Cube
     3300036: Wrench
+    3300038: Wrench_001
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -150,6 +154,7 @@ ModelImporter:
     4300032: Belt
     4300034: Cube
     4300036: Wrench
+    4300038: Wrench_001
     7400000: Default Take
     7400002: Closed
     7400004: Fist
