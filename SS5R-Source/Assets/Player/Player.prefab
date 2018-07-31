@@ -1,11 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!4 &1319430754713616635 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7905366373134328108, guid: ff27fcbf21bfbf144989e8a4d618e489,
-    type: 3}
-  m_PrefabInstance: {fileID: 9221700311458193879}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1050179750180608 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3757994487453033359, guid: c0f6f60e84d22e84ab2492c7aeb3ef55,
@@ -283,6 +277,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d163d596a9d76647acab08826df8186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1319430754713616635 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7905366373134328108, guid: ff27fcbf21bfbf144989e8a4d618e489,
+    type: 3}
+  m_PrefabInstance: {fileID: 9221700311458193879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2123068473362138671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3757994487453033359, guid: c0f6f60e84d22e84ab2492c7aeb3ef55,
@@ -656,6 +656,31 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9057418210071207244, guid: ff27fcbf21bfbf144989e8a4d618e489,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829444502567483182, guid: ff27fcbf21bfbf144989e8a4d618e489,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774672785548618350, guid: ff27fcbf21bfbf144989e8a4d618e489,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4967234360872606011, guid: ff27fcbf21bfbf144989e8a4d618e489,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183220927506260428, guid: ff27fcbf21bfbf144989e8a4d618e489,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4270643179809919698, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
     - {fileID: 5130804702648658233, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
@@ -663,4 +688,8 @@ PrefabInstance:
     - {fileID: 7905366373134328111, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
     - {fileID: 136147215635459736, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
     - {fileID: 8470205085477060392, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
+    - {fileID: 4967234360872606011, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
+    - {fileID: 1183220927506260428, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
+    - {fileID: 8829444502567483182, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
+    - {fileID: 9057418210071207244, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ff27fcbf21bfbf144989e8a4d618e489, type: 3}
