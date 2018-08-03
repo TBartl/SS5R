@@ -46,6 +46,7 @@ ModelImporter:
     100080: Coil
     100082: Wirecutters
     100084: WeldingTool
+    100086: WeldingMonitor
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -89,6 +90,7 @@ ModelImporter:
     400080: Coil
     400082: Wirecutters
     400084: WeldingTool
+    400086: WeldingMonitor
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -127,6 +129,7 @@ ModelImporter:
     2300042: Coil
     2300044: Wirecutters
     2300046: WeldingTool
+    2300048: WeldingMonitor
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -151,6 +154,7 @@ ModelImporter:
     3300042: Coil
     3300044: Wirecutters
     3300046: WeldingTool
+    3300048: WeldingMonitor
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -175,6 +179,7 @@ ModelImporter:
     4300042: Coil
     4300044: Wirecutters
     4300046: WeldingTool
+    4300048: WeldingMonitor
     7400000: Default Take
     7400002: Closed
     7400004: Fist
