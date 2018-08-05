@@ -18,13 +18,7 @@ public class Containable : MonoBehaviour {
 
     public virtual void BeContained(Container container) {
         // Released objects might instantly be contained in a drop-on-container
-        Container lastContainer = null;
-        while (this.container) {
-            if (this.container == lastContainer) {
-                Debug.LogError("Infinite loop detected while trying to release an object");
-                return;
-            }
-            lastContainer = this.container;
+        if (this.container) {
             this.container.Release(this);
         }
         this.container = container;

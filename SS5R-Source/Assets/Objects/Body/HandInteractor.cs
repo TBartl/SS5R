@@ -31,6 +31,14 @@ public class HandInteractor : Interactor, IOnContainerRelease {
                 UpdateState(HandState.fist);
         } else if ((state == HandState.closed || state == HandState.fist) &&
             controller.Get.GetPressUp(SteamVR_Controller.ButtonMask.Trigger)) {
+            List<Containable> contained = this.GetComponent<HandContainer>().GetContained();
+            if (contained.Count > 0) {
+                Containable toDrop = contained[0];
+                this.GetComponent<HandContainer>().Release(toDrop);
+                foreach (IOnLetGo letGo in toDrop.GetComponents<IOnLetGo>()) {
+                    letGo.OnLetGo(this.GetComponent<HandContainer>());
+                }
+            }
             this.GetComponent<HandContainer>().ReleaseAll();
             if (controller.Get.GetPress(SteamVR_Controller.ButtonMask.Grip)) {
                 UpdateState(HandState.point);

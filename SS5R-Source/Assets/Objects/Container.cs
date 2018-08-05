@@ -45,4 +45,8 @@ public class Container : MonoBehaviour {
             onContainerRelease.OnRelease(released);
         }
     }
+
+    public List<Containable> GetContained() {
+        return contained;
+    }
 }

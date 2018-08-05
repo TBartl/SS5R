@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Containable))]
-public class DropOnContainable : Interactor, IOnContainableReleased {
+public class DropOnContainable : Interactor, IOnLetGo {
 
     Container recentlyReleasedFrom = null;
 
@@ -20,7 +20,7 @@ public class DropOnContainable : Interactor, IOnContainableReleased {
         return currentContainer != interactable.GetComponent<Container>();
     }
 
-    public void OnReleased(Container from) {
+    public void OnLetGo(Container from) {
         recentlyReleasedFrom = from;
         if (this.hoverObject && this.CanInteractWith(hoverObject)) {
             this.hoverObject.GetComponent<DropOnContainer>().InteractWith(this);
