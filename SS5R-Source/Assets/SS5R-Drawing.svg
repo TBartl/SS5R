@@ -63,15 +63,15 @@
        inkscape:collect="always"
        id="linearGradient966">
       <stop
-         style="stop-color:#0b254d;stop-opacity:1"
+         style="stop-color:#2f3d8b;stop-opacity:1"
          offset="0"
          id="stop960" />
       <stop
          id="stop970"
          offset="0.5"
-         style="stop-color:#055679;stop-opacity:1" />
+         style="stop-color:#3467a6;stop-opacity:1" />
       <stop
-         style="stop-color:#1b57b8;stop-opacity:1"
+         style="stop-color:#63c0ef;stop-opacity:1"
          offset="1"
          id="stop964" />
     </linearGradient>
@@ -392,9 +392,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568543"
-     inkscape:cx="-679.68181"
-     inkscape:cy="366.90788"
+     inkscape:zoom="11.313709"
+     inkscape:cx="-681.57663"
+     inkscape:cy="335.21543"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -430,8 +430,8 @@
        y="199.33958"
        style="stroke-width:0.06984644"
        inkscape:export-filename="C:\Users\Thomas\Desktop\Projects\SS5R\SS5R-Source\Assets\Objects\Tools\Tool.png"
-       inkscape:export-xdpi="192"
-       inkscape:export-ydpi="192" />
+       inkscape:export-xdpi="384"
+       inkscape:export-ydpi="384" />
     <rect
        id="rect3734"
        width="2.1166666"
@@ -574,18 +574,7 @@
        y="199.35127"
        x="-184.05334"
        id="image883"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
-AAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC41ZYUyZQAAAc9JREFU
-WEfFlbFKA0EURUcUEQsFG1kJaKGRJCDGQiwMhEXIlmJW7CyFqIUgGAh+gegHCKJfELCwtdHKysZG
-/Jjn3FlfGCdvwc3GSXHY5Ozs3JtZZqKIaKSI0iei9IkofSJKn4iSKWyfUWHriObXYv1VHpMXUQKE
-f12vEL1W6ONJ0dxySNVqtQ/3uayIEuHPe4reDhR1u10aX1wl+kxKNBoNw36zaa4owQ4sVer0/jBr
-uL2Y0dP1z28jShR4XEjCJzfq5orJpoP1Xjhjh9dqNQqCwIxlok1Fx7tjetr+HCBKvPcXfeteg/DO
-naLTK3kFKuXyL1Dg8nCihzu3iygBVuFc347jmKY6STgm5yVHAQ51n82CKBmUwA5AODuU2AlDiqIo
-dzgQpc2jGZJ8LpdKBFCC4XuDIkqXGz3sRIPw8Odq447PgiglOBzvvtVqmdfAOyHPqxBlGiiB8Ha7
-ba4Ih8MKuWP/iijTQBh+ub0CXGDQEqJMgwvY4f+6DV0QiDOAC3jZhjZcAGcAr4A7JiuiTGOkBRDG
-BbiEtwIIwn8C4HDvBRDMe39Y4UCULlyAD6BisTiaAnwADSsciFICoYx7Lw+i9IkofSJKn4jSJ6L0
-B6lv40oXYEJf2XcAAAAASUVORK5CYII=
-"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlz AAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC41ZYUyZQAAAc9JREFU WEfFlbFKA0EURUcUEQsFG1kJaKGRJCDGQiwMhEXIlmJW7CyFqIUgGAh+gegHCKJfELCwtdHKysZG /Jjn3FlfGCdvwc3GSXHY5Ozs3JtZZqKIaKSI0iei9IkofSJKn4iSKWyfUWHriObXYv1VHpMXUQKE f12vEL1W6ONJ0dxySNVqtQ/3uayIEuHPe4reDhR1u10aX1wl+kxKNBoNw36zaa4owQ4sVer0/jBr uL2Y0dP1z28jShR4XEjCJzfq5orJpoP1Xjhjh9dqNQqCwIxlok1Fx7tjetr+HCBKvPcXfeteg/DO naLTK3kFKuXyL1Dg8nCihzu3iygBVuFc347jmKY6STgm5yVHAQ51n82CKBmUwA5AODuU2AlDiqIo dzgQpc2jGZJ8LpdKBFCC4XuDIkqXGz3sRIPw8Odq447PgiglOBzvvtVqmdfAOyHPqxBlGiiB8Ha7 ba4Ih8MKuWP/iijTQBh+ub0CXGDQEqJMgwvY4f+6DV0QiDOAC3jZhjZcAGcAr4A7JiuiTGOkBRDG BbiEtwIIwn8C4HDvBRDMe39Y4UCULlyAD6BisTiaAnwADSsciFICoYx7Lw+i9IkofSJKn4jSJ6L0 B6lv40oXYEJf2XcAAAAASUVORK5CYII= "
        style="image-rendering:optimizeSpeed"
        preserveAspectRatio="none"
        height="14.18828"
@@ -850,5 +839,21 @@ B6lv40oXYEJf2XcAAAAASUVORK5CYII=
        x="-190.40334"
        y="199.35127"
        style="fill:url(#linearGradient3742-4-2);fill-opacity:1;stroke-width:0.04983954" />
+    <image
+       y="200.14983"
+       x="-184.64154"
+       id="image4634"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QIMFRsp0LO8MgAAAB1pVFh0Q29tbWVudAAAAAAAQ3Jl
+YXRlZCB3aXRoIEdJTVBkLmUHAAAA2UlEQVRYw2NgGAWjYBSMgpEOGAkpUJYp/o9L7vfHc3A2K78R
+TjPuPunFaQ8LIcv5C90xxJkP3WfQKwzDEL/Uv4rhr50ipjn9DP9xOYIFn+VCxmoMf7FY/tdOkWG3
+bxCGHpGGSrg8MhAyVmNgYCjG6ggWSuJP3CkCzn65bwVZZpDsAJjvRBoqUUJHxK4SRZ5YwDTQuYBg
+CDAfuj+wDsAH3p29hZbQqOwAZAtwgZ7JNgwluUeIUkuyAwj56t3ZWwwluUeIVkv1KCA32IdOLiA3
+XkfBKBgFo2BIAQC6RkNSZjesdQAAAABJRU5ErkJggg==
+"
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="11.288889"
+       width="11.288889" />
   </g>
 </svg>
