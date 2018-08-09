@@ -51,6 +51,7 @@ ModelImporter:
     100090: ToolboxBase
     100092: ToolboxEdge
     100094: ToolboxTop
+    100096: Multitool
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -99,6 +100,7 @@ ModelImporter:
     400090: ToolboxBase
     400092: ToolboxEdge
     400094: ToolboxTop
+    400096: Multitool
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -142,6 +144,7 @@ ModelImporter:
     2300052: ToolboxBase
     2300054: ToolboxEdge
     2300056: ToolboxTop
+    2300058: Multitool
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -171,6 +174,7 @@ ModelImporter:
     3300052: ToolboxBase
     3300054: ToolboxEdge
     3300056: ToolboxTop
+    3300058: Multitool
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -200,6 +204,7 @@ ModelImporter:
     4300052: ToolboxTop
     4300054: ToolboxBase
     4300056: ToolboxEdge
+    4300058: Multitool
     7400000: Default Take
     7400002: Closed
     7400004: Fist
