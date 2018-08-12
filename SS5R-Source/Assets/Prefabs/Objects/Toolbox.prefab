@@ -44,9 +44,9 @@ GameObject:
   - component: {fileID: 6337985643731901282}
   - component: {fileID: 3444672025671205418}
   - component: {fileID: 7096773976443810871}
-  - component: {fileID: 8384883990115196540}
   - component: {fileID: 7408726172855817986}
   - component: {fileID: 3211532671918949420}
+  - component: {fileID: 277782337701030435}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -125,22 +125,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.07185437, y: 0.032851413, z: 0.011701688}
   m_Center: {x: 0, y: 0.0166455, z: 0.1534665}
---- !u!54 &8384883990115196540
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4322495148044357450}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7408726172855817986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +150,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightMaterial: {fileID: 2100000, guid: 640329a69c8d87b46af173946cb6dbc3, type: 2}
+--- !u!114 &277782337701030435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322495148044357450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43eda5d6f9d443948b9a4b8a06db2d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5066702657648744712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 805305797856943218, guid: 42b8d732eac8be741952c563f2eca62d,
