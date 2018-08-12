@@ -14,6 +14,6 @@ public class Grabbable : Interactable {
     public override void InteractWith(Interactor interactor) {
         Containable containable = this.GetComponent<Containable>();
         Container container = interactor.GetComponent<Container>();
-        containable.TryBeContained(interactor.GetComponent<Container>());
+        containable.TryBeContained(container);
     }
 }
