@@ -54,6 +54,7 @@ ModelImporter:
     100096: Multitool
     100098: Multitool_001
     100100: ToolboxButton
+    100102: Intercom
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -105,6 +106,7 @@ ModelImporter:
     400096: Multitool
     400098: Multitool_001
     400100: ToolboxButton
+    400102: Intercom
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -151,6 +153,7 @@ ModelImporter:
     2300058: Multitool
     2300060: Multitool_001
     2300062: ToolboxButton
+    2300064: Intercom
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -183,6 +186,7 @@ ModelImporter:
     3300058: Multitool
     3300060: Multitool_001
     3300062: ToolboxButton
+    3300064: Intercom
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -215,6 +219,7 @@ ModelImporter:
     4300058: Multitool
     4300060: Multitool_001
     4300062: ToolboxButton
+    4300064: Intercom
     7400000: Default Take
     7400002: Closed
     7400004: Fist
