@@ -35,7 +35,7 @@ public class HandInteractor : Interactor, IOnContainerRelease {
             if (contained.Count > 0) {
                 Containable toDrop = contained[0];
                 this.GetComponent<HandContainer>().Release(toDrop);
-                foreach (IOnLetGo letGo in toDrop.GetComponents<IOnLetGo>()) {
+                foreach (IOnLetGo letGo in toDrop.GetComponentsInChildren<IOnLetGo>()) {
                     letGo.OnLetGo(this.GetComponent<HandContainer>());
                 }
             }

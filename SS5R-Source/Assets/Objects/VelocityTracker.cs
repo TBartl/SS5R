@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class VelocityTracker : MonoBehaviour, IOnContainableReleased {
-    Vector3 velocity;
-    Vector3 angularVelocity;
     Vector3 lastPos = Vector3.zero;
     Quaternion lastRot = Quaternion.identity;
 
+    Vector3 lastVelocity;
+    Vector3 lastAngularVelocity;
+
+    Vector3 velocity;
+    Vector3 angularVelocity;
+
     void Update() {
+        lastVelocity = velocity;
+        lastAngularVelocity = angularVelocity;
+
         if (lastPos != Vector3.zero) {
             velocity = (this.transform.position - lastPos) / Time.deltaTime;
 
@@ -30,6 +37,16 @@ public class VelocityTracker : MonoBehaviour, IOnContainableReleased {
     }
     public Vector3 GetVelocity() {
         return velocity;
+    }
+
+    public Vector3 GetVelocityDiff() {
+        return velocity - lastVelocity;
+    }    
+    public Vector3 GetAngularVelocityDiff() {
+        return angularVelocity - lastAngularVelocity;
+    }
+    public float GetSpeedChange() {
+        return velocity.magnitude - lastVelocity.magnitude;
     }
 
     public void OnReleased(Container from) {
