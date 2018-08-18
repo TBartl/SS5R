@@ -400,7 +400,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 73cc0ff821be72e4e80d4f37e857646e, type: 2}
+  - {fileID: 2100000, guid: 032cc141ef9b7f140b951016fae6959a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -581,7 +581,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: -0.155}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000004307367, y: 0, z: -0.155}
+  m_ConnectedAnchor: {x: 0, y: 0, z: -0.155}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -776,11 +776,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300052, guid: e5b8f4d1a29450440bba134d26e6cb66, type: 3}
-    - target: {fileID: 805305797856943216, guid: 42b8d732eac8be741952c563f2eca62d,
+    - target: {fileID: 2517178548396963001, guid: 42b8d732eac8be741952c563f2eca62d,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 73cc0ff821be72e4e80d4f37e857646e, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2426527874420364387, guid: 42b8d732eac8be741952c563f2eca62d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 42b8d732eac8be741952c563f2eca62d, type: 3}
@@ -850,11 +850,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottom
       objectReference: {fileID: 0}
-    - target: {fileID: 805305797856943216, guid: 42b8d732eac8be741952c563f2eca62d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 73cc0ff821be72e4e80d4f37e857646e, type: 2}
     - target: {fileID: 805305797856943217, guid: 42b8d732eac8be741952c563f2eca62d,
         type: 3}
       propertyPath: m_Mesh
@@ -864,6 +859,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517178548396963001, guid: 42b8d732eac8be741952c563f2eca62d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2426527874420364387, guid: 42b8d732eac8be741952c563f2eca62d, type: 3}
