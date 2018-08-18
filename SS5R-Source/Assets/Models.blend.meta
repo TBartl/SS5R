@@ -61,6 +61,7 @@ ModelImporter:
     100110: WallOld
     100112: WallConnector
     100114: BodyOriginal_001
+    100116: GroundWarningLines
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -119,6 +120,7 @@ ModelImporter:
     400110: WallOld
     400112: WallConnector
     400114: BodyOriginal_001
+    400116: GroundWarningLines
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -172,6 +174,7 @@ ModelImporter:
     2300072: WallOld
     2300074: WallConnector
     2300076: BodyOriginal_001
+    2300078: GroundWarningLines
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -211,6 +214,7 @@ ModelImporter:
     3300072: WallOld
     3300074: WallConnector
     3300076: BodyOriginal_001
+    3300078: GroundWarningLines
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -250,6 +254,7 @@ ModelImporter:
     4300072: WallOld
     4300074: WallConnector
     4300076: BodyOriginal_001
+    4300078: GroundWarningLines
     7400000: Default Take
     7400002: Closed
     7400004: Fist
