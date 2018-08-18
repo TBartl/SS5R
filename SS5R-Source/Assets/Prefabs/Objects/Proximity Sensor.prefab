@@ -84,7 +84,7 @@ PrefabInstance:
     - target: {fileID: 805305797856943218, guid: 42b8d732eac8be741952c563f2eca62d,
         type: 3}
       propertyPath: m_Name
-      value: ProximitySensor
+      value: Proximity Sensor
       objectReference: {fileID: 0}
     - target: {fileID: 805305797856943217, guid: 42b8d732eac8be741952c563f2eca62d,
         type: 3}
@@ -95,6 +95,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 62975762a81c0a641b67be4ee40317fc, type: 2}
+      objectReference: {fileID: 2100000, guid: 032cc141ef9b7f140b951016fae6959a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42b8d732eac8be741952c563f2eca62d, type: 3}

@@ -90,11 +90,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300042, guid: e5b8f4d1a29450440bba134d26e6cb66, type: 3}
-    - target: {fileID: 805305797856943216, guid: 42b8d732eac8be741952c563f2eca62d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 73cc0ff821be72e4e80d4f37e857646e, type: 2}
     - target: {fileID: 3389273471073215157, guid: 42b8d732eac8be741952c563f2eca62d,
         type: 3}
       propertyPath: clank

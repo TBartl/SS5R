@@ -22,7 +22,7 @@ public class HandSounds : MonoBehaviour, IOnHandStateChange {
         for (float t = 0; t < falloffTime; t += Time.deltaTime) {
             float p = t / falloffTime;
             if (source)
-                source.volume = 1 - t;
+                source.volume = 1 - p;
             yield return null;
         }
         if (source)
