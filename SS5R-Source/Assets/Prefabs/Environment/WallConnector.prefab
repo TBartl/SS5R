@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 4442382719729224}
   - component: {fileID: 23216058104888456}
   - component: {fileID: 33031486716077598}
-  - component: {fileID: 65015563475808670}
   m_Layer: 0
-  m_Name: Wall
+  m_Name: WallConnector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,17 +75,4 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846476439232742}
-  m_Mesh: {fileID: 4300006, guid: e5b8f4d1a29450440bba134d26e6cb66, type: 3}
---- !u!65 &65015563475808670
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846476439232742}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 3, z: 1}
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Mesh: {fileID: 4300074, guid: e5b8f4d1a29450440bba134d26e6cb66, type: 3}
