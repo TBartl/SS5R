@@ -51,7 +51,7 @@ half4 BRDF3_Unity_PBS_Custom (half3 diffColor, half3 specColor, half oneMinusRef
 
     half3 color = BRDF3_DirectCustom(diffColor, specColor, rlPow4, smoothness);
     color *= light.color;
-    color *= min(pow(light.color, 1.5) * 20, 2) * (nl * .2 + .8);
+    color *= min(pow(light.color, 1.5) * 20, 2) * (nl * .4 + .6);
     // color *= (light.color) * (nl * .1 + .9);
     // color *= light.color * nl;
     color += BRDF3_IndirectCustom(diffColor, specColor, gi, grazingTerm, fresnelTerm);
