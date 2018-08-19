@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Interactable))]
 public class HighlightOnHover : MonoBehaviour, IOnHovered {
 
     public Material highlightMaterial;
