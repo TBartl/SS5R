@@ -80,6 +80,15 @@ ModelImporter:
     100148: MMI
     100150: MMITransparent
     100152: ProximitySensor_001
+    100154: WallGlass-1_1
+    100156: WallGlass-1_2
+    100158: WallGlass1_1
+    100160: WallGlass1_2
+    100162: WallConnectorLong
+    100164: WallGlass2_1
+    100166: WallGlass2_2
+    100168: WallGlass3_1
+    100170: WallGlass3_2
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -157,6 +166,15 @@ ModelImporter:
     400148: MMI
     400150: MMITransparent
     400152: ProximitySensor_001
+    400154: WallGlass-1_1
+    400156: WallGlass-1_2
+    400158: WallGlass1_1
+    400160: WallGlass1_2
+    400162: WallConnectorLong
+    400164: WallGlass2_1
+    400166: WallGlass2_2
+    400168: WallGlass3_1
+    400170: WallGlass3_2
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -229,6 +247,15 @@ ModelImporter:
     2300110: MMI
     2300112: MMITransparent
     2300114: ProximitySensor_001
+    2300116: WallGlass-1_1
+    2300118: WallGlass-1_2
+    2300120: WallGlass1_1
+    2300122: WallGlass1_2
+    2300124: WallConnectorLong
+    2300126: WallGlass2_1
+    2300128: WallGlass2_2
+    2300130: WallGlass3_1
+    2300132: WallGlass3_2
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -287,6 +314,15 @@ ModelImporter:
     3300110: MMI
     3300112: MMITransparent
     3300114: ProximitySensor_001
+    3300116: WallGlass-1_1
+    3300118: WallGlass-1_2
+    3300120: WallGlass1_1
+    3300122: WallGlass1_2
+    3300124: WallConnectorLong
+    3300126: WallGlass2_1
+    3300128: WallGlass2_2
+    3300130: WallGlass3_1
+    3300132: WallGlass3_2
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -345,6 +381,15 @@ ModelImporter:
     4300110: MMI
     4300112: MMITransparent
     4300114: ProximitySensor_001
+    4300116: WallGlass-1_2
+    4300118: WallGlass-1_1
+    4300120: WallGlass1_2
+    4300122: WallGlass1_1
+    4300124: WallConnectorLong
+    4300126: WallGlass2_1
+    4300128: WallGlass2_2
+    4300130: WallGlass3_1
+    4300132: WallGlass3_2
     7400000: Default Take
     7400002: Closed
     7400004: Fist
@@ -352,6 +397,7 @@ ModelImporter:
     7400008: Point
     9500000: //RootNode
     13700000: Hand
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 0
