@@ -166,6 +166,7 @@ ModelImporter:
     100320: LockerWardrobeBlack_001
     100322: SurgeryMonitor
     100324: Medkit-03
+    100326: ExosuitFabricator
     400000: AirlockCommandGlassLeft
     400002: AirlockCommandGlassRight
     400004: AirlockCommandLeft
@@ -329,6 +330,7 @@ ModelImporter:
     400320: LockerWardrobeBlack_001
     400322: SurgeryMonitor
     400324: Medkit-03
+    400326: ExosuitFabricator
     2100000: Glass__Palette01_png
     2100002: Basic__Palette01_png
     2100004: None__Palette01_png
@@ -511,6 +513,7 @@ ModelImporter:
     2300318: LockerWardrobeBlack_001
     2300320: SurgeryMonitor
     2300322: Medkit-03
+    2300324: ExosuitFabricator
     3300000: AirlockCommandGlassLeft
     3300002: AirlockCommandGlassRight
     3300004: AirlockCommandLeft
@@ -673,6 +676,7 @@ ModelImporter:
     3300318: LockerWardrobeBlack_001
     3300320: SurgeryMonitor
     3300322: Medkit-03
+    3300324: ExosuitFabricator
     4300000: BioprinterGlass
     4300002: EdsComputer
     4300004: BikeHorn
@@ -835,6 +839,7 @@ ModelImporter:
     4300318: LockerWardrobeBlack
     4300320: SurgeryMonitor
     4300322: Medkit-03
+    4300324: ExosuitFabricator
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
