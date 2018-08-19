@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class EnableOnStart : MonoBehaviour {
 
-	public Behaviour component;
+	public bool dontIfEditor = true;
 
-	// Use this for initialization
-	void Start () {
-		component.enabled = true;
-	}
+    public Behaviour component;
+
+    // Use this for initialization
+    void Start() {
+        if (!dontIfEditor || !Application.isEditor) {
+            component.enabled = true;
+        }
+    }
 }
