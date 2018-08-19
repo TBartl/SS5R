@@ -18,7 +18,6 @@ public class FwooshSoundOnThrown : MonoBehaviour, IOnLetGo {
         if (velTracker)
             source.volume = velTracker.GetVelocity().magnitude * .03f;
         source.Play();
-		source.time = .03f;
     }
 
 }

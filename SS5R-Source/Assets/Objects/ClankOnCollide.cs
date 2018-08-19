@@ -15,6 +15,5 @@ public class ClankOnCollide : MonoBehaviour, IOnCollision {
         source.spatialBlend = 1;
         source.volume = (speed - threshold) / (max - threshold);
         source.Play();
-        source.time = .3f;
     }
 }
