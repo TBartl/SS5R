@@ -94,6 +94,7 @@ ModelImporter:
     100176: AirlockScienceLeft
     100178: AirlockScienceRight
     100180: WallDoor
+    100182: FloorOutput
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -185,6 +186,7 @@ ModelImporter:
     400176: AirlockScienceLeft
     400178: AirlockScienceRight
     400180: WallDoor
+    400182: FloorOutput
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -271,6 +273,7 @@ ModelImporter:
     2300138: AirlockScienceLeft
     2300140: AirlockScienceRight
     2300142: WallDoor
+    2300144: FloorOutput
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -343,6 +346,7 @@ ModelImporter:
     3300138: AirlockScienceLeft
     3300140: AirlockScienceRight
     3300142: WallDoor
+    3300144: FloorOutput
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -415,6 +419,7 @@ ModelImporter:
     4300138: AirlockScienceLeft
     4300140: AirlockScienceRight
     4300142: WallDoor
+    4300144: FloorOutput
     7400000: Default Take
     7400002: Closed
     7400004: Fist
