@@ -77,6 +77,7 @@ ModelImporter:
     100142: BlackGloves
     100144: NitrileGloves
     100146: SurgicalDrapes
+    100148: MMI
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -151,6 +152,7 @@ ModelImporter:
     400142: BlackGloves
     400144: NitrileGloves
     400146: SurgicalDrapes
+    400148: MMI
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -220,6 +222,7 @@ ModelImporter:
     2300104: BlackGloves
     2300106: NitrileGloves
     2300108: SurgicalDrapes
+    2300110: MMI
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -275,6 +278,7 @@ ModelImporter:
     3300104: BlackGloves
     3300106: NitrileGloves
     3300108: SurgicalDrapes
+    3300110: MMI
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -330,6 +334,7 @@ ModelImporter:
     4300104: NitrileGloves
     4300106: BlackGloves
     4300108: SurgicalDrapes
+    4300110: MMI
     7400000: Default Take
     7400002: Closed
     7400004: Fist
