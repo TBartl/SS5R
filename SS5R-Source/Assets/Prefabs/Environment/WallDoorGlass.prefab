@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8894674957057125215
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6012294530237126113, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931465208646126638, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323085943865555954, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5320476809453839708, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_Name
+      value: WallDoorGlass
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192745755303654545, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300060, guid: 3ebd693f6f9971047adf11bb0883370d, type: 3}
+    - target: {fileID: 6680121320071981237, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300062, guid: 3ebd693f6f9971047adf11bb0883370d, type: 3}
+    - target: {fileID: 6012294530237126113, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2791954bb186239449a089d29b6e75a9, type: 2}
+    - target: {fileID: 7931465208646126638, guid: a98265900a9f5544798ce7daaad487bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2791954bb186239449a089d29b6e75a9, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a98265900a9f5544798ce7daaad487bd, type: 3}
