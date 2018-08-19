@@ -63,6 +63,8 @@ ModelImporter:
     100114: BodyOriginal_001
     100116: GroundWarningLines
     100118: Pen
+    100120: Scalpel
+    100122: Saw
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -123,6 +125,8 @@ ModelImporter:
     400114: BodyOriginal_001
     400116: GroundWarningLines
     400118: Pen
+    400120: Scalpel
+    400122: Saw
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -178,6 +182,8 @@ ModelImporter:
     2300076: BodyOriginal_001
     2300078: GroundWarningLines
     2300080: Pen
+    2300082: Scalpel
+    2300084: Saw
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -219,6 +225,8 @@ ModelImporter:
     3300076: BodyOriginal_001
     3300078: GroundWarningLines
     3300080: Pen
+    3300082: Scalpel
+    3300084: Saw
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -260,6 +268,8 @@ ModelImporter:
     4300076: BodyOriginal_001
     4300078: GroundWarningLines
     4300080: Pen
+    4300082: Scalpel
+    4300084: Saw
     7400000: Default Take
     7400002: Closed
     7400004: Fist
