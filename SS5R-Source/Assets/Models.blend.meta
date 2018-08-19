@@ -79,6 +79,7 @@ ModelImporter:
     100146: SurgicalDrapes
     100148: MMI
     100150: MMITransparent
+    100152: ProximitySensor_001
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -155,6 +156,7 @@ ModelImporter:
     400146: SurgicalDrapes
     400148: MMI
     400150: MMITransparent
+    400152: ProximitySensor_001
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -226,6 +228,7 @@ ModelImporter:
     2300108: SurgicalDrapes
     2300110: MMI
     2300112: MMITransparent
+    2300114: ProximitySensor_001
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -283,6 +286,7 @@ ModelImporter:
     3300108: SurgicalDrapes
     3300110: MMI
     3300112: MMITransparent
+    3300114: ProximitySensor_001
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -340,6 +344,7 @@ ModelImporter:
     4300108: SurgicalDrapes
     4300110: MMI
     4300112: MMITransparent
+    4300114: ProximitySensor_001
     7400000: Default Take
     7400002: Closed
     7400004: Fist
