@@ -164,6 +164,7 @@ ModelImporter:
     100316: ToolboxLid-01
     100318: LockerWardrobeBlack
     100320: LockerWardrobeBlack_001
+    100322: SurgeryMonitor
     400000: AirlockCommandGlassLeft
     400002: AirlockCommandGlassRight
     400004: AirlockCommandLeft
@@ -325,6 +326,7 @@ ModelImporter:
     400316: ToolboxLid-01
     400318: LockerWardrobeBlack
     400320: LockerWardrobeBlack_001
+    400322: SurgeryMonitor
     2100000: Glass__Palette01_png
     2100002: Basic__Palette01_png
     2100004: None__Palette01_png
@@ -505,6 +507,7 @@ ModelImporter:
     2300314: ToolboxLid-01
     2300316: LockerWardrobeBlack
     2300318: LockerWardrobeBlack_001
+    2300320: SurgeryMonitor
     3300000: AirlockCommandGlassLeft
     3300002: AirlockCommandGlassRight
     3300004: AirlockCommandLeft
@@ -665,6 +668,7 @@ ModelImporter:
     3300314: ToolboxLid-01
     3300316: LockerWardrobeBlack
     3300318: LockerWardrobeBlack_001
+    3300320: SurgeryMonitor
     4300000: BioprinterGlass
     4300002: EdsComputer
     4300004: BikeHorn
@@ -825,6 +829,7 @@ ModelImporter:
     4300314: Plane_002
     4300316: LockerWardrobeBlack_001
     4300318: LockerWardrobeBlack
+    4300320: SurgeryMonitor
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
