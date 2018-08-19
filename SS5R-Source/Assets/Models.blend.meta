@@ -68,6 +68,10 @@ ModelImporter:
     100124: HemoStat_001
     100126: HemoStat
     100128: Retractor
+    100130: Plate
+    100132: PlateMetal
+    100134: PlateGlass
+    100136: PlatePlasteel
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -133,6 +137,10 @@ ModelImporter:
     400124: HemoStat_001
     400126: HemoStat
     400128: Retractor
+    400130: Plate
+    400132: PlateMetal
+    400134: PlateGlass
+    400136: PlatePlasteel
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -193,6 +201,10 @@ ModelImporter:
     2300086: HemoStat_001
     2300088: HemoStat
     2300090: Retractor
+    2300092: Plate
+    2300094: PlateMetal
+    2300096: PlateGlass
+    2300098: PlatePlasteel
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -239,6 +251,10 @@ ModelImporter:
     3300086: HemoStat_001
     3300088: HemoStat
     3300090: Retractor
+    3300092: Plate
+    3300094: PlateMetal
+    3300096: PlateGlass
+    3300098: PlatePlasteel
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -285,6 +301,10 @@ ModelImporter:
     4300086: HemoStat_001
     4300088: HemoStat
     4300090: Retractor
+    4300092: Plate
+    4300094: PlateMetal
+    4300096: PlateGlass
+    4300098: PlatePlasteel
     7400000: Default Take
     7400002: Closed
     7400004: Fist
