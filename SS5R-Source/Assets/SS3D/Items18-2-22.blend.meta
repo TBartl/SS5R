@@ -167,6 +167,10 @@ ModelImporter:
     100322: SurgeryMonitor
     100324: Medkit-03
     100326: ExosuitFabricator
+    100328: Toolbox-01_001
+    100330: Toolbox-01_002
+    100332: Toolbox-01_003
+    100334: Toolbox-01_004
     400000: AirlockCommandGlassLeft
     400002: AirlockCommandGlassRight
     400004: AirlockCommandLeft
@@ -331,6 +335,10 @@ ModelImporter:
     400322: SurgeryMonitor
     400324: Medkit-03
     400326: ExosuitFabricator
+    400328: Toolbox-01_001
+    400330: Toolbox-01_002
+    400332: Toolbox-01_003
+    400334: Toolbox-01_004
     2100000: Glass__Palette01_png
     2100002: Basic__Palette01_png
     2100004: None__Palette01_png
@@ -514,6 +522,10 @@ ModelImporter:
     2300320: SurgeryMonitor
     2300322: Medkit-03
     2300324: ExosuitFabricator
+    2300326: Toolbox-01_001
+    2300328: Toolbox-01_002
+    2300330: Toolbox-01_003
+    2300332: Toolbox-01_004
     3300000: AirlockCommandGlassLeft
     3300002: AirlockCommandGlassRight
     3300004: AirlockCommandLeft
@@ -677,6 +689,10 @@ ModelImporter:
     3300320: SurgeryMonitor
     3300322: Medkit-03
     3300324: ExosuitFabricator
+    3300326: Toolbox-01_001
+    3300328: Toolbox-01_002
+    3300330: Toolbox-01_003
+    3300332: Toolbox-01_004
     4300000: BioprinterGlass
     4300002: EdsComputer
     4300004: BikeHorn
@@ -840,6 +856,10 @@ ModelImporter:
     4300320: SurgeryMonitor
     4300322: Medkit-03
     4300324: ExosuitFabricator
+    4300326: Toolbox-01_001
+    4300328: Toolbox-01_002
+    4300330: Toolbox-01_004
+    4300332: Toolbox-01_003
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
