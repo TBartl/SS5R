@@ -21,8 +21,11 @@ public class Finger : Interactor, IOnHandStateChange {
     }
 
     public void OnRealColliderCollide(Collider other) {
-        if (hoverObject && hoverObject == other.GetComponent<Interactable>()) {
-            hoverObject.InteractWith(this);
-        }
+        Interactable otherInteractable = other.GetComponent<Interactable>();
+        if (!otherInteractable)
+            return;
+        if (!otherInteractable.GetInteractable(this))
+            return;
+        otherInteractable.InteractWith(this);
     }
 }
