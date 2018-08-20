@@ -171,6 +171,11 @@ ModelImporter:
     100330: Toolbox-01_002
     100332: Toolbox-01_003
     100334: Toolbox-01_004
+    100336: Boombox_001
+    100338: Boombox_002
+    100340: Boombox_003
+    100342: Boombox_004
+    100344: Boombox_005
     400000: AirlockCommandGlassLeft
     400002: AirlockCommandGlassRight
     400004: AirlockCommandLeft
@@ -339,6 +344,11 @@ ModelImporter:
     400330: Toolbox-01_002
     400332: Toolbox-01_003
     400334: Toolbox-01_004
+    400336: Boombox_001
+    400338: Boombox_002
+    400340: Boombox_003
+    400342: Boombox_004
+    400344: Boombox_005
     2100000: Glass__Palette01_png
     2100002: Basic__Palette01_png
     2100004: None__Palette01_png
@@ -526,6 +536,11 @@ ModelImporter:
     2300328: Toolbox-01_002
     2300330: Toolbox-01_003
     2300332: Toolbox-01_004
+    2300334: Boombox_001
+    2300336: Boombox_002
+    2300338: Boombox_003
+    2300340: Boombox_004
+    2300342: Boombox_005
     3300000: AirlockCommandGlassLeft
     3300002: AirlockCommandGlassRight
     3300004: AirlockCommandLeft
@@ -693,6 +708,11 @@ ModelImporter:
     3300328: Toolbox-01_002
     3300330: Toolbox-01_003
     3300332: Toolbox-01_004
+    3300334: Boombox_001
+    3300336: Boombox_002
+    3300338: Boombox_003
+    3300340: Boombox_004
+    3300342: Boombox_005
     4300000: BioprinterGlass
     4300002: EdsComputer
     4300004: BikeHorn
@@ -860,6 +880,11 @@ ModelImporter:
     4300328: Toolbox-01_002
     4300330: Toolbox-01_004
     4300332: Toolbox-01_003
+    4300334: Boombox_001
+    4300336: Boombox_005
+    4300338: Boombox_004
+    4300340: Boombox_003
+    4300342: Boombox_002
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}

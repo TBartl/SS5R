@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour {
     protected Interactable hoverObject;
+    float minHoverDist = 0;
 
     public virtual bool CanInteractWith(Interactable interactable) {
         return interactable != null;
@@ -13,6 +14,7 @@ public class Interactor : MonoBehaviour {
         if (hoverObject)
             hoverObject.SetHovered(this);
         hoverObject = null;
+        minHoverDist = float.MaxValue;
     }
 
     void OnTriggerStay(Collider other) {
@@ -20,10 +22,13 @@ public class Interactor : MonoBehaviour {
         Rigidbody otherRB = other.GetComponentInParent<Rigidbody>();
         if (otherRB)
             otherRoot = otherRB.gameObject;
-        foreach (Interactable otherInteractable in otherRoot.GetComponentsInChildren<Interactable>()) {
+        foreach (Interactable otherInteractable in otherRoot.GetComponents<Interactable>()) {
             if (otherInteractable.GetInteractable(this)) {
-                hoverObject = otherInteractable;
-                return;
+                float dist = Vector3.Distance(this.transform.position, other.transform.TransformPoint(other.bounds.center));
+                if (dist < minHoverDist) {
+                    hoverObject = otherInteractable;
+                    minHoverDist = dist;
+                }
             }
         }
     }
