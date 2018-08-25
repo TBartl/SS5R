@@ -101,6 +101,7 @@ ModelImporter:
     100190: AirScrubberFans
     100192: HoloPad
     100194: HealthScanner
+    100196: HealthScannerEmissive
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -199,6 +200,7 @@ ModelImporter:
     400190: AirScrubberFans
     400192: HoloPad
     400194: HealthScanner
+    400196: HealthScannerEmissive
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -292,6 +294,7 @@ ModelImporter:
     2300152: AirScrubberFans
     2300154: HoloPad
     2300156: HealthScanner
+    2300158: HealthScannerEmissive
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -371,6 +374,7 @@ ModelImporter:
     3300152: AirScrubberFans
     3300154: HoloPad
     3300156: HealthScanner
+    3300158: HealthScannerEmissive
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -450,6 +454,7 @@ ModelImporter:
     4300152: AirScrubberFans
     4300154: HoloPad
     4300156: HealthScanner
+    4300158: HealthScannerEmissive
     7400000: Default Take
     7400002: Closed
     7400004: Fist
