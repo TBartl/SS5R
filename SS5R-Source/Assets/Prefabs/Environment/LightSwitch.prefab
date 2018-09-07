@@ -270,3 +270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   on: 1
+  offMaterial: {fileID: 2100000, guid: 032cc141ef9b7f140b951016fae6959a, type: 2}
+  onMaterial: {fileID: 2100000, guid: 50a09abcae6e5d246a36033361a7955e, type: 2}
+  lights: []

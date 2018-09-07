@@ -8,6 +8,8 @@ public class LightSwitch : MonoBehaviour, IOnPressed {
     float transitionPercent = 1;
 
     Coroutine transition;
+    public Material offMaterial;
+    public Material onMaterial;
 
     public List<Light> lights;
 
@@ -39,6 +41,7 @@ public class LightSwitch : MonoBehaviour, IOnPressed {
     void UpdateLights() {
         foreach (Light light in lights) {
             light.enabled = on;
+            light.GetComponentInChildren<MeshRenderer>().material = on ? onMaterial : offMaterial;
         }
     }
 }
