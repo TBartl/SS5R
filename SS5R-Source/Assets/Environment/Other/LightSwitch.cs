@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LightSwitch : MonoBehaviour, IOnPressed {
     public bool on = true;
+    public bool rotate = true;
     float transitionTime = .14f;
     float transitionPercent = 1;
 
@@ -25,6 +26,8 @@ public class LightSwitch : MonoBehaviour, IOnPressed {
     }
 
     IEnumerator Flip() {
+        if (!rotate)
+            yield break;
         Quaternion fromRot = this.transform.localRotation;
         Quaternion toRot = Quaternion.identity;
         if (!on)
