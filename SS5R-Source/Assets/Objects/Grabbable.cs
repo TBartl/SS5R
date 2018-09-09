@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Containable))]
-public class Grabbable : Interactable {
+public class Grabbable : OpenHandInteractable {
 
     public override bool GetInteractable(Interactor interactor) {
         Containable containable = this.GetComponent<Containable>();
