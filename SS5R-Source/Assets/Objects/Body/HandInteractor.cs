@@ -14,7 +14,16 @@ public class HandInteractor : Interactor, IOnContainerRelease {
     HandState state = HandState.open;
 
     public override bool CanInteractWith(Interactable interactable) {
-        return base.CanInteractWith(interactable) && this.state == HandState.open && this.GetComponent<HandContainer>().CanContain(interactable.GetComponent<Containable>());
+        if (!base.CanInteractWith(interactable))
+            return false;
+        if (this.state != HandState.open)
+            return false;
+        if (interactable.GetComponent<OpenHandInteractable>() == null)
+            return false;
+        Containable containable = interactable.GetComponent<Containable>();
+        if (containable)
+            return this.GetComponent<HandContainer>().CanContain(interactable.GetComponent<Containable>());
+        return true;
     }
 
     void Update() {
@@ -25,13 +34,13 @@ public class HandInteractor : Interactor, IOnContainerRelease {
             if (hoverObject) {
                 hoverObject.InteractWith(this);
             }
-            if (hoverObject && hoverObject.GetComponent<Containable>().GetContainer() == this.GetComponent<Container>())
+            if (hoverObject && hoverObject.GetComponent<Containable>() && hoverObject.GetComponent<Containable>().GetContainer() == this.GetComponent<Container>())
                 UpdateState(HandState.closed);
             else
                 UpdateState(HandState.fist);
         } else if ((state == HandState.closed || state == HandState.fist) &&
             controller.Get.GetPressUp(SteamVR_Controller.ButtonMask.Trigger)) {
-            List<Containable> contained = this.GetComponent<HandContainer>().GetContained();
+            List<Containable> contained = this.GetComponent<Container>().GetContained();
             if (contained.Count > 0) {
                 Containable toDrop = contained[0];
                 this.GetComponent<HandContainer>().Release(toDrop);
