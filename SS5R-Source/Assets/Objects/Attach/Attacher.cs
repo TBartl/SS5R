@@ -6,7 +6,11 @@ public class Attacher : Interactor, IOnLetGo {
     AttachPoint attachedTo;
 
     public override bool CanInteractWith(Interactable interactable) {
-        return base.CanInteractWith(interactable) && attachedTo == null && interactable.GetComponent<AttachPoint>();
+        if (!base.CanInteractWith(interactable))
+            return false;
+        if (this.GetComponent<Containable>().GetContainer() == null)
+            return false;
+        return attachedTo == null && interactable.GetComponent<AttachPoint>();
     }
 
     public void OnLetGo(Container from) {
