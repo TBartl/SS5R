@@ -15,5 +15,9 @@ public class AttachPoint : Interactable {
         Attacher attacher = interactor.GetComponent<Attacher>();
         attached = attacher;
         interactor.GetComponent<Attacher>().SetAttached(this);
+
+        foreach (IOnAttach onAttach in this.GetComponentsInChildren<IOnAttach>()) {
+            onAttach.OnAttach();
+        }
     }
 }

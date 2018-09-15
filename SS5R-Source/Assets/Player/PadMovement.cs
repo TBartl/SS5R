@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PadMovement : MonoBehaviour {
-	float speed = 3;
+	float speed = 1.5f;
 	Camera mainCam;
 
     Controller controller;

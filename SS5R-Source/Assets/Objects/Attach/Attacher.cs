@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Attacher : Interactor, IOnLetGo {
     AttachPoint attachedTo;
-    float attachTime = .3f;
+    float attachTime = .18f;
     AnimationCurve curve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
     public override bool CanInteractWith(Interactable interactable) {
