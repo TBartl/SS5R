@@ -110,6 +110,7 @@ ModelImporter:
     100208: BorgTorsoBack
     100210: BorgLeg_001
     100212: LightSides
+    100214: ExosuitFabricator
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -217,6 +218,7 @@ ModelImporter:
     400208: BorgTorsoBack
     400210: BorgLeg_001
     400212: LightSides
+    400214: ExosuitFabricator
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -319,6 +321,7 @@ ModelImporter:
     2300170: BorgTorsoBack
     2300172: BorgLeg_001
     2300174: LightSides
+    2300176: ExosuitFabricator
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -407,6 +410,7 @@ ModelImporter:
     3300170: BorgTorsoBack
     3300172: BorgLeg_001
     3300174: LightSides
+    3300176: ExosuitFabricator
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -495,6 +499,7 @@ ModelImporter:
     4300170: BorgTorsoBack
     4300172: BorgLeg_001
     4300174: LightSides
+    4300176: ExosuitFabricator
     7400000: Default Take
     7400002: Closed
     7400004: Fist
