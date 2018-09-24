@@ -9,7 +9,6 @@ public class Pressable : Interactable {
     }
 
     public override void InteractWith(Interactor interactor) {
-        Debug.Log(this.name + " pressed!");
         foreach(IOnPressed onPressed in this.GetComponents<IOnPressed>()) {
             onPressed.OnPressed(interactor);
         }
