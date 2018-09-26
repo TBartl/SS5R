@@ -134,5 +134,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonBuy
       objectReference: {fileID: 0}
+    - target: {fileID: 4743930605903747625, guid: bdf24a319763fbd48a041174fca6e427,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 12ec52145a5e1c545a34816e895ef938,
+        type: 3}
+    - target: {fileID: 7700400462465442159, guid: bdf24a319763fbd48a041174fca6e427,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 169.08508
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700400462465442159, guid: bdf24a319763fbd48a041174fca6e427,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -3.5719147
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700400462465442159, guid: bdf24a319763fbd48a041174fca6e427,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 208.69525
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700400462465442159, guid: bdf24a319763fbd48a041174fca6e427,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.4460144
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdf24a319763fbd48a041174fca6e427, type: 3}

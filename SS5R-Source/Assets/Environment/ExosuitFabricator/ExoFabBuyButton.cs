@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public struct BuildInformation {
+    public GameObject prefab;
+    public Sprite buildSprite;
+}
+
 public class ExoFabBuyButton : MonoBehaviour, IOnPressed {
-	public GameObject prefab;
+    public List<BuildInformation> buildInformations;
 
     public void OnPressed(Interactor by) {
-		this.GetComponentInParent<ExosuitFabricator>().TryBuild(prefab);
-	}
+        foreach (BuildInformation buildInformation in buildInformations) {
+            this.GetComponentInParent<ExosuitFabricator>().TryBuild(buildInformation);
+        }
+    }
 }

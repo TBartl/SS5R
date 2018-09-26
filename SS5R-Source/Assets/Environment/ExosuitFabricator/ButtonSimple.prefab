@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4901593986391443004}
   - component: {fileID: 5404605460818912390}
   m_Layer: 5
-  m_Name: Buy
+  m_Name: ButtonSimple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -375.49997, y: 235}
-  m_SizeDelta: {x: 183, y: 229}
+  m_SizeDelta: {x: 342, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &724065852562513610
 CanvasRenderer:
@@ -69,7 +69,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 12ec52145a5e1c545a34816e895ef938, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9490fe8c8942cb8458f95a87e865f48c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88,8 +88,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 163.77483, y: 214.63376, z: 15}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 339.9844, y: 68.69878, z: 15}
+  m_Center: {x: -3.5719147, y: 0, z: 0}
 --- !u!54 &8013132773577340555
 Rigidbody:
   m_ObjectHideFlags: 0
