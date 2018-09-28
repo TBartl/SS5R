@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public struct BuildInformation {
     public GameObject prefab;
     public Sprite buildSprite;
