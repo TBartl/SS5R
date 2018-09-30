@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4901593986391443004}
   - component: {fileID: 5404605460818912390}
   - component: {fileID: 7802857809505780847}
+  - component: {fileID: 478529217534600059}
   m_Layer: 5
   m_Name: ButtonSimple
   m_TagString: Untagged
@@ -146,3 +147,16 @@ MonoBehaviour:
   range: {x: 1.06, y: 1.08}
   oscillateSpeed: 10
   decreaseSpeed: 0.5
+--- !u!114 &478529217534600059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5691255593343475169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4a3d40732a5634ca314a434d5f3a9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 8789e934df58fb84b845784d0e730d09, type: 3}
