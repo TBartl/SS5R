@@ -11,6 +11,8 @@ public class ExosuitFabricator : MonoBehaviour {
 
     List<ExoFabBuildButton> buildQueue = new List<ExoFabBuildButton>();
 
+    bool buildPercentage;
+
     public void TryBuild(BuildInformation buildInformation) {
         Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);
 
