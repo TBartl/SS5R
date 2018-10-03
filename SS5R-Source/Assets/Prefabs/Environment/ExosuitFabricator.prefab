@@ -1,45 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!224 &408692205683415890 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-  m_PrefabInstance: {fileID: 3975652749900796076}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &8918593970604971514 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-  m_PrefabInstance: {fileID: 5278950554096557572}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2113880032515632097 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-  m_PrefabInstance: {fileID: 3445727370005045279}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1382339481696367545 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-  m_PrefabInstance: {fileID: 2425366617926744135}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &4443046615326216120 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-  m_PrefabInstance: {fileID: 1094219827580109894}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &3579857093346800717 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-  m_PrefabInstance: {fileID: 227881991490928563}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &7112227119107729768 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-  m_PrefabInstance: {fileID: 5779271263177384598}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &4999747676268299842 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-  m_PrefabInstance: {fileID: 8639311994510495164}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1237146965102067
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,6 +150,11 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!224 &8918593970604971514 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+  m_PrefabInstance: {fileID: 5278950554096557572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1338299190485694215
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +271,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.46534437, y: 0.1569618, z: 0.07848209}
   m_Center: {x: -0.17466623, y: -0.04776975, z: 0.3125932}
+--- !u!224 &7112227119107729768 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+  m_PrefabInstance: {fileID: 5779271263177384598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1881943611172693687
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +469,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!224 &4999747676268299842 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+  m_PrefabInstance: {fileID: 8639311994510495164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3770961330141746397
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +737,11 @@ RectTransform:
   m_AnchoredPosition: {x: -180, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &3579857093346800717 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+  m_PrefabInstance: {fileID: 227881991490928563}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4975357077710111041
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,6 +930,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!224 &4443046615326216120 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+  m_PrefabInstance: {fileID: 1094219827580109894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6503393478915604993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1083,16 @@ MonoBehaviour:
   buildQueueContainer: {fileID: 5398130781704330551}
   spawnPosition: {fileID: 5139057288167752941}
   buildButtonPrefab: {fileID: 1146817369699864777, guid: 4a1e5ff30245c4a4d916921affa7e9f3, type: 3}
+--- !u!224 &1382339481696367545 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+  m_PrefabInstance: {fileID: 2425366617926744135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2113880032515632097 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+  m_PrefabInstance: {fileID: 3445727370005045279}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7518140908831912489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,6 +1209,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!224 &408692205683415890 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+  m_PrefabInstance: {fileID: 3975652749900796076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8697564399407497052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1385,46 @@ PrefabInstance:
       propertyPath: buildInformations.Array.data[0].buildSprite
       value: 
       objectReference: {fileID: 21300000, guid: d455e1e9b217bba4c9999fb04bd2b14b, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: efb228dce57fc3e48a9d8a894ba74323, type: 3}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 705180569175873008, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: efb228dce57fc3e48a9d8a894ba74323, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.costs.Array.data[0].amount
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633062243641310196, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: "\u25C610,000 metal"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.prefab
+      value: 
+      objectReference: {fileID: 4520450816830099861, guid: fc2a7061f940ead418b4e552afff6861, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.displayName
+      value: 'Cyborg
+
+        Left Arm'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704828212437066816, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: 'Cyborg
+
+        Left Arm'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
 --- !u!1001 &1094219827580109894
@@ -1512,6 +1552,46 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 2a0bbabc4485bc1409b292ec9b128415, type: 3}
     - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
       propertyPath: buildInformations.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 1597113073495623175, guid: 394735f227f7fd74f915f407fa2dfb58, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.displayName
+      value: 'Cyborg
+
+        Torso'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704828212437066816, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: 'Cyborg
+
+        Torso'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: d7345ed6d00e5e248bd54947437c03e2, type: 3}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 61
+      objectReference: {fileID: 0}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 705180569175873008, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d7345ed6d00e5e248bd54947437c03e2, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.costs.Array.data[0].amount
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633062243641310196, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: "\u25C620,000 metal"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.prefab
       value: 
       objectReference: {fileID: 1597113073495623175, guid: 394735f227f7fd74f915f407fa2dfb58, type: 3}
     m_RemovedComponents: []
@@ -1652,10 +1732,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7833209881493418801}
     m_Modifications:
-    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-      propertyPath: buildInformations.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3641068463639710718, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1760,18 +1836,42 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e2c50425331c37f489f37784defa6f30, type: 3}
-    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-      propertyPath: prefab
+    - target: {fileID: 7704828212437066816, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: 'Cyborg
+
+        Endoskeleton'
+      objectReference: {fileID: 0}
+    - target: {fileID: 705180569175873008, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1597113073495623175, guid: 4f988ae98bf98c74c9f2842c9f2da1ea, type: 3}
+      objectReference: {fileID: 21300000, guid: 0fbc51c28ec033143a6846d62ac632fa, type: 3}
     - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-      propertyPath: buildInformations.Array.data[0].prefab
+      propertyPath: buildInformation.icon
       value: 
-      objectReference: {fileID: 1597113073495623175, guid: 4f988ae98bf98c74c9f2842c9f2da1ea, type: 3}
+      objectReference: {fileID: 21300000, guid: 0fbc51c28ec033143a6846d62ac632fa, type: 3}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 83
+      objectReference: {fileID: 0}
     - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
-      propertyPath: buildInformations.Array.data[0].buildSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9490fe8c8942cb8458f95a87e865f48c, type: 3}
+      propertyPath: buildInformation.displayName
+      value: 'Cyborg
+
+        Endoskeleton'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.costs.Array.data[0].amount
+      value: 15000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633062243641310196, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: "\u25C615,000 metal"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
 --- !u!1001 &3975652749900796076
@@ -1901,6 +2001,46 @@ PrefabInstance:
       propertyPath: buildInformations.Array.data[0].prefab
       value: 
       objectReference: {fileID: 1597113073495623175, guid: 71813d169808eea41b6ea0b4bc055102, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.displayName
+      value: 'Cyborg
+
+        Plating'
+      objectReference: {fileID: 0}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c9f763db2a71aa4583ac5ffdf306b5e, type: 3}
+    - target: {fileID: 7704828212437066816, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: 'Cyborg
+
+        Plating'
+      objectReference: {fileID: 0}
+    - target: {fileID: 705180569175873008, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c9f763db2a71aa4583ac5ffdf306b5e, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.prefab
+      value: 
+      objectReference: {fileID: 1597113073495623175, guid: 0c05a4ed2516c814491aaade080073f5, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.costs.Array.data[0].amount
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633062243641310196, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: "\u25C620,000 metal"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
 --- !u!1001 &5278950554096557572
@@ -2102,6 +2242,42 @@ PrefabInstance:
       propertyPath: buildInformations.Array.data[5].prefab
       value: 
       objectReference: {fileID: 1597113073495623175, guid: 0c05a4ed2516c814491aaade080073f5, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.displayName
+      value: 'Cyborg
+
+        Complete Set'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704828212437066816, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: 'Cyborg
+
+        Complete Set'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.costs.Array.data[0].amount
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633062243641310196, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: "\u25C6100,000 metal"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: cdbaf2db97d386446b55f484274dfd20, type: 3}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 81
+      objectReference: {fileID: 0}
+    - target: {fileID: 705180569175873008, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cdbaf2db97d386446b55f484274dfd20, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
 --- !u!1001 &5779271263177384598
@@ -2231,6 +2407,46 @@ PrefabInstance:
       propertyPath: buildInformations.Array.data[0].prefab
       value: 
       objectReference: {fileID: 1597113073495623175, guid: 54290734af9e92042b577fb9140fed31, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.displayName
+      value: 'Cyborg
+
+        Right Arm'
+      objectReference: {fileID: 0}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 1527402330740f146a4e8a954ac98613, type: 3}
+    - target: {fileID: 7704828212437066816, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: 'Cyborg
+
+        Right Arm'
+      objectReference: {fileID: 0}
+    - target: {fileID: 705180569175873008, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1527402330740f146a4e8a954ac98613, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.prefab
+      value: 
+      objectReference: {fileID: 1597113073495623175, guid: 54290734af9e92042b577fb9140fed31, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.costs.Array.data[0].amount
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633062243641310196, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: "\u25C610,000 metal"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
 --- !u!1001 &8639311994510495164
@@ -2360,5 +2576,37 @@ PrefabInstance:
       propertyPath: buildInformations.Array.data[0].buildSprite
       value: 
       objectReference: {fileID: 21300000, guid: 26cbe9ca24db326419ba8818d8e702c1, type: 3}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 230190637733916049, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 6a9be46cf5bd0bf4191a5ccff5d8eccd, type: 3}
+    - target: {fileID: 705180569175873008, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6a9be46cf5bd0bf4191a5ccff5d8eccd, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.prefab
+      value: 
+      objectReference: {fileID: 1597113073495623175, guid: 71813d169808eea41b6ea0b4bc055102, type: 3}
+    - target: {fileID: 4403011772913374178, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: buildInformation.displayName
+      value: 'Cyborg
+
+        Leg'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704828212437066816, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}
+      propertyPath: m_Text
+      value: 'Cyborg
+
+        Leg'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19173143dbc10a94fb4472f2acc2a08b, type: 3}

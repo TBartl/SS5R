@@ -13,14 +13,14 @@ public class ExosuitFabricator : MonoBehaviour {
 
     bool buildPercentage;
 
-    public void TryBuild(BuildInformation buildInformation) {
+    public void TryBuild(ExoFabBuildInformation buildInformation) {
         Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);
 
         GameObject buildGO = Instantiate(buildButtonPrefab, buildQueueContainer);
 
         Image buildImage = buildGO.GetComponent<Image>();
         buildImage.SetNativeSize();
-        buildImage.sprite = buildInformation.buildSprite;
+        // buildImage.sprite = buildInformation.;
 
         RectTransform buildRT = buildGO.GetComponent<RectTransform>();
         buildRT.localPosition = Vector3.zero;
