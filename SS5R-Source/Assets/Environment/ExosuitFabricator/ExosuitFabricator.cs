@@ -11,16 +11,11 @@ public class ExosuitFabricator : MonoBehaviour {
 
     List<ExoFabBuildButton> buildQueue = new List<ExoFabBuildButton>();
 
-    bool buildPercentage;
 
     public void TryBuild(ExoFabBuildInformation buildInformation) {
         Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);
 
-        GameObject buildGO = Instantiate(buildButtonPrefab, buildQueueContainer);
-
-        Image buildImage = buildGO.GetComponent<Image>();
-        buildImage.SetNativeSize();
-        // buildImage.sprite = buildInformation.;
+        GameObject buildGO = Instantiate(buildButtonPrefab, buildQueueContainer); ;
 
         RectTransform buildRT = buildGO.GetComponent<RectTransform>();
         buildRT.localPosition = Vector3.zero;
@@ -28,15 +23,12 @@ public class ExosuitFabricator : MonoBehaviour {
 
         ExoFabBuildButton build = buildGO.GetComponent<ExoFabBuildButton>();
         buildQueue.Add(build);
-
-        UpdatePositions();
-
+        build.BuildInformation = buildInformation;
     }
 
-    void UpdatePositions() {
+    void UpdateQueueIndexes() {
         for (int i = 0; i < buildQueue.Count; i++) {
-            RectTransform rt = buildQueue[i].GetComponent<RectTransform>();
-            rt.localPosition = new Vector3(0, -(rt.sizeDelta.y + 10) * i, 0);
+            buildQueue[i].SetPosition(i);
         }
     }
 }
