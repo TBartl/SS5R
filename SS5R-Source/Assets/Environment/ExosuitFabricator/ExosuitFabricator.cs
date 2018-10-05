@@ -24,6 +24,7 @@ public class ExosuitFabricator : MonoBehaviour {
         ExoFabBuildButton build = buildGO.GetComponent<ExoFabBuildButton>();
         buildQueue.Add(build);
         build.BuildInformation = buildInformation;
+        UpdateQueueIndexes();
     }
 
     void UpdateQueueIndexes() {
