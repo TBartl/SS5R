@@ -13,7 +13,6 @@ public class ExosuitFabricator : MonoBehaviour {
 
 
     public void TryBuild(ExoFabBuildInformation buildInformation) {
-        Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);
 
         GameObject buildGO = Instantiate(buildButtonPrefab, buildQueueContainer); ;
 
@@ -25,11 +24,29 @@ public class ExosuitFabricator : MonoBehaviour {
         buildQueue.Add(build);
         build.BuildInformation = buildInformation;
         UpdateQueueIndexes();
+
+        if (buildQueue.Count == 1) {
+            StartCoroutine(Build());
+        }
     }
 
     void UpdateQueueIndexes() {
         for (int i = 0; i < buildQueue.Count; i++) {
             buildQueue[i].SetPosition(i);
+        }
+    }
+
+    IEnumerator Build() {
+        ExoFabBuildInformation buildInformation = buildQueue[0].BuildInformation;
+        for (float t = 0; t < buildInformation.buildTime; t += Time.deltaTime) {
+            yield return null;
+        }
+        Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);
+        Destroy(buildQueue[0].gameObject);
+        buildQueue.RemoveAt(0);
+        if (buildQueue.Count > 0) {
+            UpdateQueueIndexes();
+            StartCoroutine(Build());
         }
     }
 }

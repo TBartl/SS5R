@@ -14,6 +14,9 @@ public class ExoFabBuildButton : MonoBehaviour, IOnPressed {
 
     ExoFabBuildInformation buildInformation;
     public ExoFabBuildInformation BuildInformation {
+        get {
+            return buildInformation;
+        }
         set {
             buildInformation = value;
             icon.sprite = value.icon;
