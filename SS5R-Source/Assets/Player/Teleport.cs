@@ -22,7 +22,5 @@ public class Teleport : MonoBehaviour {
         while (controller.Get.GetPress(SteamVR_Controller.ButtonMask.Touchpad)) {
             yield return null;
         }
-		Debug.Log("Released!");
-
     }
 }

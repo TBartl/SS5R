@@ -23,6 +23,7 @@ public struct ExoFabBuildInformation {
     public GameObject prefab;
     public List<ExoFabBuildCost> costs;
     public float buildTime;
+    public Mesh displayModel;
 }
 
 public class ExoFabBuyButton : MonoBehaviour, IOnPressed {

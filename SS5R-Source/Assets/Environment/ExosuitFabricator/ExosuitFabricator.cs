@@ -7,6 +7,7 @@ public class ExosuitFabricator : MonoBehaviour {
     AudioSource noiseAudioSource;
 
     public RectTransform buildQueueContainer;
+    public MeshFilter displayModel;
 
     public Transform spawnPosition;
     public GameObject buildButtonPrefab;
@@ -48,8 +49,9 @@ public class ExosuitFabricator : MonoBehaviour {
 
     IEnumerator Build() {
         noiseAudioSource.Play();
-
         ExoFabBuildInformation buildInformation = buildQueue[0].BuildInformation;
+        SetupDisplayModel(buildInformation.displayModel);
+
         for (float t = 0; t < buildInformation.buildTime; t += Time.deltaTime) {
             buildQueue[0].Progress = t / buildInformation.buildTime;
             yield return null;
@@ -57,9 +59,14 @@ public class ExosuitFabricator : MonoBehaviour {
         Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);
         Delete(0);
         noiseAudioSource.Stop();
+        displayModel.mesh = null;
         if (buildQueue.Count > 0) {
             StartCoroutine(Build());
         }
+    }
+
+    void SetupDisplayModel(Mesh mesh) {
+        displayModel.mesh = mesh;
     }
 
     void Delete(int index) {
