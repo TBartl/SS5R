@@ -64,15 +64,32 @@ public class ExosuitFabricator : MonoBehaviour {
             StartCoroutine(Build());
         }
     }
-
+    
     void SetupDisplayModel(Mesh mesh) {
+        displayModel.transform.localPosition = Vector3.zero;
+        displayModel.transform.localScale = Vector3.one;
+        displayModel.transform.localRotation = Quaternion.identity;
+
         MeshRenderer displayRenderer = displayModel.GetComponent<MeshRenderer>();
-        displayModel.mesh = mesh;
+        displayModel.sharedMesh = mesh;
         Bounds bounds = displayRenderer.bounds;
         if (bounds.size.y > bounds.size.z) {
             displayModel.transform.rotation = Quaternion.Euler(-90, 0, 0);
             bounds = displayRenderer.bounds;
         }
+        Bounds startBounds = bounds;
+        Bounds fitBounds = displayModel.GetComponentInParent<BoxCollider>().bounds;
+
+        Vector3 ratios = Vector3.zero;
+        ratios.x = bounds.size.x / fitBounds.size.x;
+        ratios.y = bounds.size.y / fitBounds.size.y;
+        ratios.z = bounds.size.z / fitBounds.size.z;
+        float maxRatio = Mathf.Max(ratios.x, ratios.y, ratios.z);
+        bounds.size /= maxRatio;
+        displayModel.transform.localScale = Vector3.one / maxRatio;
+
+        bounds.center = fitBounds.center + Vector3.up * (bounds.size.y / 2 - fitBounds.size.y / 2);
+        displayModel.transform.position += bounds.center - startBounds.center;
     }
 
     void Delete(int index) {
