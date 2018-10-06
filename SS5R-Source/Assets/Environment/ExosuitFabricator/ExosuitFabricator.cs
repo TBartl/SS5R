@@ -51,9 +51,12 @@ public class ExosuitFabricator : MonoBehaviour {
         noiseAudioSource.Play();
         ExoFabBuildInformation buildInformation = buildQueue[0].BuildInformation;
         SetupDisplayModel(buildInformation.displayModel);
+        MeshRenderer displayRenderer = displayModel.GetComponent<MeshRenderer>();
 
         for (float t = 0; t < buildInformation.buildTime; t += Time.deltaTime) {
-            buildQueue[0].Progress = t / buildInformation.buildTime;
+            float p = t / buildInformation.buildTime;
+            buildQueue[0].Progress = p;
+            displayRenderer.material.SetFloat("_ConstructY", p);
             yield return null;
         }
         Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);
@@ -64,7 +67,7 @@ public class ExosuitFabricator : MonoBehaviour {
             StartCoroutine(Build());
         }
     }
-    
+
     void SetupDisplayModel(Mesh mesh) {
         displayModel.transform.localPosition = Vector3.zero;
         displayModel.transform.localScale = Vector3.one;
