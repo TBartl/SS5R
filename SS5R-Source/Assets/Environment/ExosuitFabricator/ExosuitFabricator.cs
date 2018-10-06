@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ExosuitFabricator : MonoBehaviour {
+    AudioSource noiseAudioSource;
+
     public RectTransform buildQueueContainer;
 
     public Transform spawnPosition;
@@ -11,9 +13,11 @@ public class ExosuitFabricator : MonoBehaviour {
 
     List<ExoFabBuildButton> buildQueue = new List<ExoFabBuildButton>();
 
+    void Awake() {
+        noiseAudioSource = this.GetComponent<AudioSource>();
+    }
 
     public void TryBuild(ExoFabBuildInformation buildInformation) {
-
         GameObject buildGO = Instantiate(buildButtonPrefab, buildQueueContainer); ;
 
         RectTransform buildRT = buildGO.GetComponent<RectTransform>();
@@ -43,6 +47,8 @@ public class ExosuitFabricator : MonoBehaviour {
     }
 
     IEnumerator Build() {
+        noiseAudioSource.Play();
+
         ExoFabBuildInformation buildInformation = buildQueue[0].BuildInformation;
         for (float t = 0; t < buildInformation.buildTime; t += Time.deltaTime) {
             buildQueue[0].Progress = t / buildInformation.buildTime;
@@ -50,6 +56,7 @@ public class ExosuitFabricator : MonoBehaviour {
         }
         Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);
         Delete(0);
+        noiseAudioSource.Stop();
         if (buildQueue.Count > 0) {
             StartCoroutine(Build());
         }
