@@ -66,7 +66,13 @@ public class ExosuitFabricator : MonoBehaviour {
     }
 
     void SetupDisplayModel(Mesh mesh) {
+        MeshRenderer displayRenderer = displayModel.GetComponent<MeshRenderer>();
         displayModel.mesh = mesh;
+        Bounds bounds = displayRenderer.bounds;
+        if (bounds.size.y > bounds.size.z) {
+            displayModel.transform.rotation = Quaternion.Euler(-90, 0, 0);
+            bounds = displayRenderer.bounds;
+        }
     }
 
     void Delete(int index) {
