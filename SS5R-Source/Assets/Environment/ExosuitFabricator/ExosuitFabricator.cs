@@ -30,9 +30,15 @@ public class ExosuitFabricator : MonoBehaviour {
         }
     }
 
+    public void TryDelete(int index) {
+        if (index == 0) return;
+        Delete(index);
+
+    }
+
     void UpdateQueueIndexes() {
         for (int i = 0; i < buildQueue.Count; i++) {
-            buildQueue[i].SetPosition(i);
+            buildQueue[i].Index = i;
         }
     }
 
@@ -43,11 +49,15 @@ public class ExosuitFabricator : MonoBehaviour {
             yield return null;
         }
         Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);
-        Destroy(buildQueue[0].gameObject);
-        buildQueue.RemoveAt(0);
+        Delete(0);
         if (buildQueue.Count > 0) {
-            UpdateQueueIndexes();
             StartCoroutine(Build());
         }
+    }
+
+    void Delete(int index) {
+        Destroy(buildQueue[0].gameObject);
+        buildQueue.RemoveAt(0);
+        UpdateQueueIndexes();
     }
 }

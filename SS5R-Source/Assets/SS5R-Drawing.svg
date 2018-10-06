@@ -413,8 +413,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="476.16953"
-     inkscape:cy="580.22213"
+     inkscape:cx="359.19401"
+     inkscape:cy="720.13109"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2632,5 +2632,28 @@
        preserveAspectRatio="none"
        height="8.9454031"
        width="5.5908771" />
+    <g
+       id="g1222"
+       inkscape:export-filename="C:\Users\Thomas\Desktop\Projects\SS5R\SS5R-Source\Assets\Environment\ExosuitFabricator\Icons\Delete.png"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192"
+       transform="matrix(0.80357152,0,0,0.80357152,18.146376,17.991627)">
+      <rect
+         transform="rotate(45)"
+         y="-6.4936552"
+         x="128.61848"
+         height="11.873177"
+         width="2.9434896"
+         id="rect1203"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.55745804;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         transform="rotate(135)"
+         y="-136.02682"
+         x="-2.0288117"
+         height="11.873178"
+         width="2.9434896"
+         id="rect1203-3"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.55745804;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
   </g>
 </svg>

@@ -34,6 +34,7 @@ MonoBehaviour:
     costs:
     - resource: 0
       amount: 5000
+    buildTime: 0
 --- !u!1 &4215237100112665788
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +452,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5404605460818912390, guid: bdf24a319763fbd48a041174fca6e427, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 89a4ee2877878e841b8905c139b40423, type: 3}
     m_RemovedComponents:
     - {fileID: 4743930605903747625, guid: bdf24a319763fbd48a041174fca6e427, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bdf24a319763fbd48a041174fca6e427, type: 3}
