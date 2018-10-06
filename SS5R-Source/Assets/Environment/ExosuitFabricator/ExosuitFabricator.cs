@@ -39,6 +39,7 @@ public class ExosuitFabricator : MonoBehaviour {
     IEnumerator Build() {
         ExoFabBuildInformation buildInformation = buildQueue[0].BuildInformation;
         for (float t = 0; t < buildInformation.buildTime; t += Time.deltaTime) {
+            buildQueue[0].Progress = t / buildInformation.buildTime;
             yield return null;
         }
         Instantiate(buildInformation.prefab, spawnPosition.transform.position, Quaternion.identity);

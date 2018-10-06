@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class ExoFabBuildButton : MonoBehaviour, IOnPressed {
 
-    [SerializeField] Image icon;
-    [SerializeField] Text text;
-
     RectTransform rt;
 
-    static int offset = 74;
+    [SerializeField] Image icon;
+    [SerializeField] Text text;
+    [SerializeField] Image progressBar;
 
     ExoFabBuildInformation buildInformation;
     public ExoFabBuildInformation BuildInformation {
@@ -24,6 +23,14 @@ public class ExoFabBuildButton : MonoBehaviour, IOnPressed {
             text.text = value.displayName.Replace("\n", "");
         }
     }
+
+    public float Progress {
+        set {
+            progressBar.transform.localScale = new Vector3(value, 1, 1);
+        }
+    }
+
+    static int offset = 74;
 
     void Awake() {
         rt = this.GetComponent<RectTransform>();
