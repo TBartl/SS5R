@@ -17,6 +17,7 @@ public class ExosuitFabricator : MonoBehaviour {
     [SerializeField] Image resourceBarFill;
 
     List<ExoFabBuildButton> buildQueue = new List<ExoFabBuildButton>();
+    bool building;
 
     static int resourceCapacity = 200000;
 
@@ -27,7 +28,7 @@ public class ExosuitFabricator : MonoBehaviour {
         }
     }
 
-    public void TryBuild(ExoFabBuildInformation buildInformation) {
+    public void AddToQueue(ExoFabBuildInformation buildInformation) {
         GameObject buildGO = Instantiate(buildButtonPrefab, buildQueueContainer); ;
 
         RectTransform buildRT = buildGO.GetComponent<RectTransform>();
@@ -39,9 +40,7 @@ public class ExosuitFabricator : MonoBehaviour {
         build.BuildInformation = buildInformation;
         UpdateQueueIndexes();
 
-        if (buildQueue.Count == 1) {
-            StartCoroutine(Build());
-        }
+        TryBuild();
     }
 
     public void TryDelete(int index) {
@@ -56,7 +55,22 @@ public class ExosuitFabricator : MonoBehaviour {
         }
     }
 
+    void TryBuild() {
+        if (buildQueue.Count == 0) return;
+        if (building) return;
+        ExoFabBuildInformation bi = buildQueue[0].BuildInformation;
+        foreach (var cost in bi.costs) {
+            if (resources[cost.resource] < cost.amount) return;
+        }
+        foreach (var cost in bi.costs) {
+            resources[cost.resource] -= cost.amount;
+        }
+        UpdateResourceVisual();
+        StartCoroutine(Build());
+    }
+
     IEnumerator Build() {
+        building = true;
         noiseAudioSource.Play();
         ExoFabBuildInformation buildInformation = buildQueue[0].BuildInformation;
         SetupDisplayModel(buildInformation.displayModel);
@@ -72,9 +86,8 @@ public class ExosuitFabricator : MonoBehaviour {
         Delete(0);
         noiseAudioSource.Stop();
         displayModel.mesh = null;
-        if (buildQueue.Count > 0) {
-            StartCoroutine(Build());
-        }
+        building = false;
+        TryBuild();
     }
 
     void SetupDisplayModel(Mesh mesh) {
@@ -108,12 +121,14 @@ public class ExosuitFabricator : MonoBehaviour {
         Destroy(buildQueue[0].gameObject);
         buildQueue.RemoveAt(0);
         UpdateQueueIndexes();
+        TryBuild();
     }
 
 
     public void AddResource(BuildResource resourceType, int amount) {
         resources[resourceType] += amount;
         UpdateResourceVisual();
+        TryBuild();
     }
 
     void UpdateResourceVisual() {

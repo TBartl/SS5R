@@ -40,7 +40,7 @@ public class ExoFabBuyButton : MonoBehaviour, IOnPressed {
     }
 
     public void OnPressed(Interactor by) {
-        this.GetComponentInParent<ExosuitFabricator>().TryBuild(buildInformation);
+        this.GetComponentInParent<ExosuitFabricator>().AddToQueue(buildInformation);
     }
 
     void UpdateVisuals() {
