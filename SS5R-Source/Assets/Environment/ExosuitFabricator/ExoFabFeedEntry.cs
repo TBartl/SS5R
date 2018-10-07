@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ExoFabFeedEntry : Interactable {
+    AudioSource insertSource;
+
     [SerializeField] Transform insertPoint;
     [SerializeField] AnimationCurve curve = AnimationCurve.EaseInOut(0, 0, 1, 1);
     static float feedTime = .5f;
+
+    void Awake() {
+        insertSource = this.GetComponent<AudioSource>();
+    }
     public override bool GetInteractable(Interactor interactor) {
         return base.GetInteractable(interactor); ;
     }
@@ -15,6 +21,7 @@ public class ExoFabFeedEntry : Interactable {
     }
 
     IEnumerator Feed(Interactor interactor) {
+        insertSource.Play();
         Vector3 fromPos = interactor.transform.position;
         Quaternion fromRot = interactor.transform.rotation;
         Destroy(interactor.GetComponent<Rigidbody>());
