@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class ExosuitFabricator : MonoBehaviour {
     AudioSource noiseAudioSource;
@@ -12,10 +13,18 @@ public class ExosuitFabricator : MonoBehaviour {
     public Transform spawnPosition;
     public GameObject buildButtonPrefab;
 
+    Dictionary<BuildResource, int> resources = new Dictionary<BuildResource, int>();
+    [SerializeField] Image resourceBarFill;
+
     List<ExoFabBuildButton> buildQueue = new List<ExoFabBuildButton>();
+
+    static int resourceCapacity = 200000;
 
     void Awake() {
         noiseAudioSource = this.GetComponent<AudioSource>();
+        for (int i = 0; i < (int)BuildResource.LAST; i++) {
+            resources[(BuildResource)i] = 0;
+        }
     }
 
     public void TryBuild(ExoFabBuildInformation buildInformation) {
@@ -99,5 +108,16 @@ public class ExosuitFabricator : MonoBehaviour {
         Destroy(buildQueue[0].gameObject);
         buildQueue.RemoveAt(0);
         UpdateQueueIndexes();
+    }
+
+
+    public void AddResource(BuildResource resourceType, int amount) {
+        resources[resourceType] += amount;
+        UpdateResourceVisual();
+    }
+
+    void UpdateResourceVisual() {
+        int numResources = resources.Sum(x => x.Value);
+        resourceBarFill.fillAmount = numResources / (float)resourceCapacity;
     }
 }

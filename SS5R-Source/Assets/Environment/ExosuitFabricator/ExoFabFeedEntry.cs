@@ -24,6 +24,10 @@ public class ExoFabFeedEntry : Interactable {
         insertSource.Play();
         Vector3 fromPos = interactor.transform.position;
         Quaternion fromRot = interactor.transform.rotation;
+
+        ExoFabFeedable feedable = interactor.GetComponent<ExoFabFeedable>();
+        this.GetComponentInParent<ExosuitFabricator>().AddResource(feedable.ResourceType, feedable.ResourceAmount);
+
         Destroy(interactor.GetComponent<Rigidbody>());
         for (float t = 0; t < feedTime; t += Time.deltaTime) {
             float p = t / feedTime;

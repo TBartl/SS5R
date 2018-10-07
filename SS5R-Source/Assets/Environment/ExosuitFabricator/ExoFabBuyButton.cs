@@ -7,7 +7,8 @@ using UnityEngine.UI;
 [System.Serializable]
 public enum BuildResource {
     metal,
-    glass
+    glass,
+    LAST
 }
 
 [System.Serializable]
