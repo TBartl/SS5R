@@ -5,12 +5,13 @@ using UnityEngine;
 public class EyePanel : MonoBehaviour {
 
     [SerializeField] AnimationCurve curve;
+    [SerializeField] float maxAngle = 90;
+
 
     bool open = false;
     Coroutine co;
 
     static float openTime = .3f;
-    static float maxAngle = 90;
 
     public bool Open {
         get { return open; }
