@@ -4,10 +4,11 @@
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _MainTex2 ("Albedo2 (RGB)", 2D) = "white" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _ConstructY ("ConstructY", Range(0,1)) = 0.0
         _ConstructGap ("ConstructGap", Range(0,1)) = 0.0
-        _ConstructColor ("_ConstructColor", Color) = (1,1,1,1)
+        _ConstructColor ("ConstructColor", Color) = (1,1,1,1)
     }
     SubShader
     {
@@ -26,6 +27,7 @@
 
         struct Input {
             float2 uv_MainTex;
+            float2 uv2_MainTex2;
             float3 worldPos;
             float3 viewDir;
             float3 worldNormal;
@@ -44,13 +46,13 @@
         UNITY_INSTANCING_BUFFER_START(Props)
             // put more per-instance properties here
         UNITY_INSTANCING_BUFFER_END(Props)
-
+        
         void surf (Input IN, inout SurfaceOutputStandard o) {
-            if (IN.worldPos.y > _ConstructY + _ConstructGap) {
+            if (IN.uv2_MainTex2.y > _ConstructY + _ConstructGap) {
                 discard;
             }
             
-            if (IN.worldPos.y > _ConstructY || dot(IN.worldNormal, IN.viewDir) < 0)
+            if (IN.uv2_MainTex2.y > _ConstructY || dot(IN.worldNormal, IN.viewDir) < 0)
             {
                 o.Albedo = _ConstructColor.rgb;
                 o.Alpha  = _ConstructColor.a;
