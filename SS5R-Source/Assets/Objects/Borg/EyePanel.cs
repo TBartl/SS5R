@@ -24,14 +24,13 @@ public class EyePanel : MonoBehaviour {
         }
     }
     IEnumerator Move() {
-        float from = (transform.parent.transform.localRotation.eulerAngles.y + 360) % 360;
-        float to = open ? maxAngle : 0;
+        Quaternion from = Quaternion.Euler(0, transform.parent.transform.localRotation.eulerAngles.y, 0);
+        Quaternion to = Quaternion.Euler(0, open ? maxAngle : 0, 0);
         for (float t = 0; t < openTime; t += Time.deltaTime) {
             float p = curve.Evaluate(t / openTime);
-            float angle = Mathf.LerpUnclamped(from, to, p);
-            transform.parent.transform.localRotation = Quaternion.Euler(0, angle, 0);
+            transform.parent.transform.localRotation = Quaternion.SlerpUnclamped(from, to, p);
             yield return null;
         }
-        transform.parent.transform.localRotation = Quaternion.Euler(0, to, 0);
+        transform.parent.transform.localRotation = to;
     }
 }

@@ -605,10 +605,10 @@ GameObject:
   - component: {fileID: 2398632511759363162}
   - component: {fileID: 5185831182016363959}
   - component: {fileID: 1234839798065142338}
-  - component: {fileID: 8749145042779139713}
   - component: {fileID: 509399760813036082}
   - component: {fileID: 2740016545221214735}
   - component: {fileID: 1137902376589928714}
+  - component: {fileID: 8749145042779139713}
   m_Layer: 0
   m_Name: EyePanel
   m_TagString: Untagged
@@ -763,18 +763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightMaterial: {fileID: 2100000, guid: 640329a69c8d87b46af173946cb6dbc3, type: 2}
---- !u!114 &8749145042779139713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7113104195158913714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a100144f29a6b4f4491660fdb4b606b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &509399760813036082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,6 +798,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26d8a836a1daab742ab010badb4a43bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8749145042779139713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7113104195158913714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a100144f29a6b4f4491660fdb4b606b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8157344019920662276
