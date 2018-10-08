@@ -120,6 +120,13 @@ ModelImporter:
     100228: BorgHeadCombined
     100230: BorgHeadEyeCover
     100232: BorgFlashAttachPoint
+    100234: Battery
+    100236: BatteryLit
+    100238: BorgTorsoBatteryHolder
+    100240: BorgTorsoWiringOriginal
+    100242: BorgTorsoWiringOriginal_001
+    100244: BorgTorso_001
+    100246: BorgTorsoWiring
     400000: //RootNode
     400002: ReferenceCube
     400004: ReferenceCube_001
@@ -237,6 +244,13 @@ ModelImporter:
     400228: BorgHeadCombined
     400230: BorgHeadEyeCover
     400232: BorgFlashAttachPoint
+    400234: Battery
+    400236: BatteryLit
+    400238: BorgTorsoBatteryHolder
+    400240: BorgTorsoWiringOriginal
+    400242: BorgTorsoWiringOriginal_001
+    400244: BorgTorso_001
+    400246: BorgTorsoWiring
     2100000: Material__Floor_png
     2100002: Material_001__Light_png
     2100004: Material__Floor_png_001
@@ -349,6 +363,13 @@ ModelImporter:
     2300190: BorgHeadCombined
     2300192: BorgHeadEyeCover
     2300194: BorgFlashAttachPoint
+    2300196: Battery
+    2300198: BatteryLit
+    2300200: BorgTorsoBatteryHolder
+    2300202: BorgTorsoWiringOriginal
+    2300204: BorgTorsoWiringOriginal_001
+    2300206: BorgTorso_001
+    2300208: BorgTorsoWiring
     3300000: ReferenceCube
     3300002: ReferenceCube_001
     3300004: Light
@@ -447,6 +468,13 @@ ModelImporter:
     3300190: BorgHeadCombined
     3300192: BorgHeadEyeCover
     3300194: BorgFlashAttachPoint
+    3300196: Battery
+    3300198: BatteryLit
+    3300200: BorgTorsoBatteryHolder
+    3300202: BorgTorsoWiringOriginal
+    3300204: BorgTorsoWiringOriginal_001
+    3300206: BorgTorso_001
+    3300208: BorgTorsoWiring
     4300000: ReferenceCube
     4300002: ReferenceCube_001
     4300004: Light
@@ -545,6 +573,13 @@ ModelImporter:
     4300190: BorgHeadEyeCover
     4300192: BorgHeadCombined
     4300194: BorgFlashAttachPoint
+    4300196: Battery
+    4300198: BatteryLit
+    4300200: BorgTorsoBatteryHolder
+    4300202: BorgTorsoWiringOriginal
+    4300204: BorgTorsoWiringOriginal_001
+    4300206: BorgTorso_001
+    4300208: BorgTorsoWiring
     7400000: Default Take
     7400002: Closed
     7400004: Fist
